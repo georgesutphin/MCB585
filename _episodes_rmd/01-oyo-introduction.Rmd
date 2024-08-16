@@ -1,6 +1,6 @@
 ---
 title: "Getting started with R and RStudio -- Additional Detail"
-classdate: "8/24/2023 -- On Your Own"
+classdate: "8/27/2024 -- On Your Own"
 teaching: 90
 exercises: 30
 questions:

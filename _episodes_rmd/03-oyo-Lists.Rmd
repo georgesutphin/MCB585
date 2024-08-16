@@ -1,6 +1,6 @@
 ---
 title: "Lists and Advanced Indexing"
-classdate: "8/31/2023 -- On Your Own"
+classdate: "9/10/2024 -- In Class"
 teaching: 90
 exercises: 30
 questions:
@@ -25,7 +25,7 @@ source("../bin/chunk-options.R")
 knitr_fig_path("03-oyo-lists-")
 ```
 
-##  On Your Own
+##  In Class
 
 ### Lists
 

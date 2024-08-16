@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2023-09-18 21:10:42 -0700">
+    <meta http-equiv="last-modified" content="2024-08-15 22:01:56 -0700">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -248,7 +248,7 @@
 
   <div class="row">
     <div class="col-md-3">
-      <strong>Class Date:</strong> 9/19/2023 -- In Class
+      <strong>Class Date:</strong> 9/26/2024 -- In Class
       <br/>
       <strong>Teaching:</strong> 90 min
       <br/>
@@ -442,7 +442,10 @@ increase your statistical power to detect changes.</li>
      </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Age (years)"</span><span class="p">,</span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Fraction Surviving"</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-4</p>
+</div>
 
 <p> </p>
 
@@ -472,7 +475,10 @@ increase your statistical power to detect changes.</li>
      </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Age (years)"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Age-Specific Mortality"</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-5</p>
+</div>
 
 <p> </p>
 
@@ -484,7 +490,10 @@ increase your statistical power to detect changes.</li>
      </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Age-Specific Mortality"</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-6</p>
+</div>
 
 <p> </p>
 
@@ -648,7 +657,10 @@ early in life, it may be selected for even if it causes a fatal disease later in
      </span><span class="n">main</span><span class="o">=</span><span class="s2">"BUB/BnJ Survival"</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-10-1.png" alt="plot of chunk unnamed-chunk-10" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-10</p>
+</div>
 
 <p> </p>
 
@@ -733,7 +745,10 @@ early in life, it may be selected for even if it causes a fatal disease later in
        </span><span class="n">legend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"f"</span><span class="p">,</span><span class="s2">"m"</span><span class="p">))</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-12-1.png" title="plot of chunk unnamed-chunk-12" alt="plot of chunk unnamed-chunk-12" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-12-1.png" alt="plot of chunk unnamed-chunk-12" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-12</p>
+</div>
 
 <hr />
 <h3 id="the-log-rank-test">The log-rank test</h3>
@@ -778,15 +793,16 @@ sex=m 32       24     23.9  0.000893   0.00189
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">str</span><span class="p">(</span><span class="n">logrank.bub</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List of 6
- $ n    : 'table' int [1:2(1d)] 32 32
+<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List of 7
+ $ n     : 'table' int [1:2(1d)] 32 32
   ..- attr(*, "dimnames")=List of 1
   .. ..$ groups: chr [1:2] "sex=f" "sex=m"
- $ obs  : num [1:2] 24 24
- $ exp  : num [1:2] 24.1 23.9
- $ var  : num [1:2, 1:2] 11.3 -11.3 -11.3 11.3
- $ chisq: num 0.00189
- $ call : language survdiff(formula = Surv(lifespan_days, censor == 0) ~ sex, data = surv.bub)
+ $ obs   : num [1:2] 24 24
+ $ exp   : num [1:2] 24.1 23.9
+ $ var   : num [1:2, 1:2] 11.3 -11.3 -11.3 11.3
+ $ chisq : num 0.00189
+ $ pvalue: num 0.965
+ $ call  : language survdiff(formula = Surv(lifespan_days, censor == 0) ~ sex, data = surv.bub)
  - attr(*, "class")= chr "survdiff"
 </code></pre></div></div>
 
@@ -912,7 +928,10 @@ data:</p>
      </span><span class="n">lty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"black"</span><span class="p">,</span><span class="w"> </span><span class="s2">"blue"</span><span class="p">,</span><span class="w"> </span><span class="s2">"red"</span><span class="p">))</span><span class="w"> </span><span class="c1"># generate lines of the right colors</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <p><img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-17-1.png" title="plot of chunk unnamed-chunk-17" alt="plot of chunk unnamed-chunk-17" width="612" style="display: block; margin: auto;" /></p>
+    <div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-17-1.png" alt="plot of chunk unnamed-chunk-17" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-17</p>
+</div>
 
     <p> </p>
 

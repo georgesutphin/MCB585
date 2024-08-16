@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2023-09-18 21:10:42 -0700">
+    <meta http-equiv="last-modified" content="2024-08-15 22:01:56 -0700">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -248,7 +248,7 @@
 
   <div class="row">
     <div class="col-md-3">
-      <strong>Class Date:</strong> 9/12/2023 -- In Class
+      <strong>Class Date:</strong> 9/19/2024 -- In Class
       <br/>
       <strong>Teaching:</strong> 90 min
       <br/>
@@ -659,7 +659,10 @@ is the original code:</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hist</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_start</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-06-class-distributions-unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-06-class-distributions-unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-5</p>
+</div>
 
 <p> </p>
 
@@ -668,7 +671,10 @@ is the original code:</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hist.bw.b6</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">hist</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_start</span><span class="p">,</span><span class="w"> </span><span class="n">breaks</span><span class="o">=</span><span class="m">15</span><span class="p">,</span><span class="w"> </span><span class="n">freq</span><span class="o">=</span><span class="nb">F</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-06-class-distributions-unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-06-class-distributions-unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-6</p>
+</div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hist.bw.b6</span><span class="w">
 </span></code></pre></div></div>
@@ -730,25 +736,26 @@ Call:
 Data: b6$bw_start (96 obs.);	Bandwidth 'bw' = 0.5924
 
        x               y            
- Min.   :13.37   Min.   :8.002e-05  
- 1st Qu.:16.34   1st Qu.:1.386e-02  
- Median :19.31   Median :7.567e-02  
- Mean   :19.31   Mean   :8.413e-02  
- 3rd Qu.:22.28   3rd Qu.:1.365e-01  
- Max.   :25.25   Max.   :2.250e-01  
+ Min.   :13.37   Min.   :7.931e-05  
+ 1st Qu.:16.34   1st Qu.:1.384e-02  
+ Median :19.31   Median :7.560e-02  
+ Mean   :19.31   Mean   :8.405e-02  
+ 3rd Qu.:22.28   3rd Qu.:1.364e-01  
+ Max.   :25.25   Max.   :2.249e-01  
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">str</span><span class="p">(</span><span class="n">dens.bw.b6</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List of 7
- $ x        : num [1:512] 13.4 13.4 13.4 13.4 13.5 ...
- $ y        : num [1:512] 8.00e-05 9.01e-05 1.01e-04 1.13e-04 1.27e-04 ...
- $ bw       : num 0.592
- $ n        : int 96
- $ call     : language density.default(x = b6$bw_start)
- $ data.name: chr "b6$bw_start"
- $ has.na   : logi FALSE
+<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List of 8
+ $ x         : num [1:512] 13.4 13.4 13.4 13.4 13.5 ...
+ $ y         : num [1:512] 7.93e-05 8.93e-05 1.00e-04 1.12e-04 1.26e-04 ...
+ $ bw        : num 0.592
+ $ n         : int 96
+ $ old.coords: logi FALSE
+ $ call      : language density.default(x = b6$bw_start)
+ $ data.name : chr "b6$bw_start"
+ $ has.na    : logi FALSE
  - attr(*, "class")= chr "density"
 </code></pre></div></div>
 
@@ -783,7 +790,10 @@ Data: b6$bw_start (96 obs.);	Bandwidth 'bw' = 0.5924
 </span><span class="n">lines</span><span class="p">(</span><span class="n">norm.x</span><span class="p">,</span><span class="n">norm.y</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"blue"</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-06-class-distributions-unnamed-chunk-9-1.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-06-class-distributions-unnamed-chunk-9-1.png" alt="plot of chunk unnamed-chunk-9" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-9</p>
+</div>
 
 <p> </p>
 
@@ -793,7 +803,10 @@ Data: b6$bw_start (96 obs.);	Bandwidth 'bw' = 0.5924
 </span><span class="n">qqline</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_start</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-06-class-distributions-unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-06-class-distributions-unnamed-chunk-10-1.png" alt="plot of chunk unnamed-chunk-10" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-10</p>
+</div>
 
 <p> </p>
 
@@ -820,7 +833,10 @@ Data: b6$bw_start (96 obs.);	Bandwidth 'bw' = 0.5924
 </span><span class="n">mtext</span><span class="p">(</span><span class="s2">"1/x"</span><span class="p">,</span><span class="w"> </span><span class="n">side</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-2</span><span class="p">,</span><span class="w"> </span><span class="n">adj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="n">font</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1.5</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-06-class-distributions-unnamed-chunk-11-1.png" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-06-class-distributions-unnamed-chunk-11-1.png" alt="plot of chunk unnamed-chunk-11" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-11</p>
+</div>
 
 <p> </p>
 

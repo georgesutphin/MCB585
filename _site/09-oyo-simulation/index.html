@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2023-09-18 21:10:42 -0700">
+    <meta http-equiv="last-modified" content="2024-08-15 22:01:56 -0700">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -248,7 +248,7 @@
 
   <div class="row">
     <div class="col-md-3">
-      <strong>Class Date:</strong> 9/21/2023 -- On Your Own
+      <strong>Class Date:</strong> 10/10/2024 -- On Your Own
       <br/>
       <strong>Teaching:</strong> 90 min
       <br/>
@@ -293,9 +293,9 @@
 
 </blockquote>
 
-<h2 id="on-your-own">On Your Own</h2>
+<h2 id="in-class">In Class</h2>
 
-<p><em>In Class</em> we looked at how to conduct a basic power analysis using a t-test. This process relies on the same assumptions that go into a t-test, and in particular that we understand the properties of a t distribution, which is related to the normal distribution. For simple experimental designs–comparing normally distributed phenotype(s) in samples taken randomly and independently from two groups–this process works great.</p>
+<p>In the last class we looked at how to conduct a basic power analysis using a t-test. This process relies on the same assumptions that go into a t-test, and in particular that we understand the properties of a t distribution, which is related to the normal distribution. For simple experimental designs–comparing normally distributed phenotype(s) in samples taken randomly and independently from two groups–this process works great.</p>
 
 <p>What happens when our phenotype or experimental design breaks one of the assumptions of a t-test? Maybe our data is not normal; maybe we have a more complex sampling strategy; maybe we are looking at the interaction between multiple phenotypes across time or some other dimension. What do we do now?</p>
 
@@ -429,7 +429,7 @@
 </span><span class="n">x</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [1]  859 1052  838  999  736 1034 1049  727  929  908
+<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [1] 1052  929  895  901  922  901  952  973  859  272
 </code></pre></div></div>
 
 <p> </p>
@@ -493,8 +493,8 @@
 </span><span class="n">samp.b6</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [1]  988.6342  848.2433  973.1964  787.7737  927.9421  671.3529  979.9968
- [8]  952.5514  900.6205 1070.8704
+<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [1]  697.9714  780.9557  622.8860  838.7997  842.2156  919.7381 1026.1157
+ [8]  732.2792  850.4204  881.4376
 </code></pre></div></div>
 
 <p> </p>
@@ -513,8 +513,8 @@
 </span><span class="n">samp.b6</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [1] 1271.0953  953.3049 1203.7566  796.2932  925.1207 1048.4625 1121.6864
- [8]  873.4601 1043.7940  767.3590
+<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [1]  826.4314 1105.7478 1136.3552 1132.0799  938.7596  897.5862 1077.9679
+ [8] 1098.2434 1201.8992 1169.3312
 </code></pre></div></div>
 
 <p> </p>
@@ -545,7 +545,10 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-7-1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-7</p>
+</div>
 
 <p> </p>
 
@@ -683,23 +686,26 @@
 </span></code></pre></div></div>
 
 <div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    N alpha power
-1   5 0.068 0.397
-2  10 0.073 0.763
-3  15 0.065 0.911
-4  20 0.067 0.973
-5  25 0.041 0.990
-6  30 0.051 0.998
-7  35 0.050 0.998
-8  40 0.055 1.000
-9  45 0.054 1.000
-10 50 0.053 1.000
+1   5 0.072 0.418
+2  10 0.059 0.741
+3  15 0.082 0.909
+4  20 0.053 0.970
+5  25 0.059 0.989
+6  30 0.055 0.995
+7  35 0.060 1.000
+8  40 0.058 1.000
+9  45 0.053 1.000
+10 50 0.052 1.000
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Check out the distribution of calculated alphas</span><span class="w">
 </span><span class="n">hist</span><span class="p">(</span><span class="n">outcome</span><span class="o">$</span><span class="n">alpha</span><span class="p">,</span><span class="w"> </span><span class="n">breaks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">15</span><span class="p">,</span><span class="w"> </span><span class="n">freq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-8-1.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-8-1.png" alt="plot of chunk unnamed-chunk-8" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-8</p>
+</div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># generate power plot to compare power vs. sample size</span><span class="w">
 </span><span class="n">plot</span><span class="p">(</span><span class="n">outcome</span><span class="o">$</span><span class="n">power</span><span class="p">,</span><span class="w"> </span><span class="n">outcome</span><span class="o">$</span><span class="n">N</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"l"</span><span class="p">,</span><span class="w"> 
@@ -708,7 +714,10 @@
      </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Power"</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-8-2.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-8-2.png" alt="plot of chunk unnamed-chunk-8" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-8</p>
+</div>
 
 <p> </p>
 
@@ -945,32 +954,32 @@ alternative, and would have saved me some lines of code).</p>
 </span></code></pre></div>    </div>
 
     <div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    N alpha power
-1   5 0.071 0.224
-2  10 0.061 0.393
-3  15 0.068 0.573
-4  20 0.052 0.692
-5  25 0.054 0.792
-6  30 0.052 0.877
-7  35 0.058 0.909
-8  40 0.054 0.931
-9  45 0.067 0.959
-10 50 0.047 0.977
+1   5 0.062 0.185
+2  10 0.057 0.394
+3  15 0.061 0.582
+4  20 0.061 0.701
+5  25 0.065 0.780
+6  30 0.052 0.849
+7  35 0.054 0.915
+8  40 0.056 0.944
+9  45 0.052 0.963
+10 50 0.030 0.979
 </code></pre></div>    </div>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">outcome.m</span><span class="w">
 </span></code></pre></div>    </div>
 
     <div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    N alpha power
-1   5 0.072 0.460
-2  10 0.068 0.804
-3  15 0.096 0.945
-4  20 0.089 0.988
-5  25 0.106 0.994
-6  30 0.109 0.996
-7  35 0.124 1.000
-8  40 0.119 1.000
-9  45 0.163 1.000
-10 50 0.153 1.000
+1   5 0.086 0.492
+2  10 0.079 0.830
+3  15 0.095 0.933
+4  20 0.103 0.985
+5  25 0.107 0.996
+6  30 0.098 1.000
+7  35 0.128 1.000
+8  40 0.121 1.000
+9  45 0.155 1.000
+10 50 0.182 1.000
 </code></pre></div>    </div>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># generate power plot to compare power vs. sample size</span><span class="w">
@@ -982,7 +991,10 @@ alternative, and would have saved me some lines of code).</p>
 </span><span class="n">lines</span><span class="p">(</span><span class="n">outcome.m</span><span class="o">$</span><span class="n">N</span><span class="p">,</span><span class="w"> </span><span class="n">outcome.m</span><span class="o">$</span><span class="n">power</span><span class="p">,</span><span class="w">  </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"blue"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <p><img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="612" style="display: block; margin: auto;" /></p>
+    <div class="figure" style="text-align: center">
+<img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-10-1.png" alt="plot of chunk unnamed-chunk-10" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-10</p>
+</div>
 
     <p> </p>
 

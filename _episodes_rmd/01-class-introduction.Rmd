@@ -1,6 +1,6 @@
 ---
 title: "Getting started with R and RStudio"
-classdate: "8/24/2023 --  In Class"
+classdate: "8/27/2024 --  In Class"
 teaching: 90
 exercises: 30
 questions:
@@ -22,7 +22,7 @@ keypoints:
 - "Using RStudio can make programming in R much more productive."
 - "Consider what working directory you are in when sourcing a script and loading data."
 - "Functions are the basic tool used to manipulate data and other objects in R."
-- "Functions take the form `output <- function(argument1, argument2, ...)`."
+- "Functions take the form: `output <- function(argument1, argument2, ...)`."
 - "Arguments can be passed to functions by matching based on name, by position, or by omitting them (in which case the default value is used)."
 source: Rmd
 ---

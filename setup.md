@@ -6,8 +6,8 @@ root: .
 
 To participate in both in-class exercises and homework, you will need access to a computer with the current versions of the following installed:
 
-1. the [R software](https://cran.r-project.org/mirrors.html) itself, and
-1. [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/#download).
+1. the [R software](https://www.r-project.org/) itself, and
+1. [RStudio Desktop](https://posit.co/download/rstudio-desktop/).
 
 You also need to download some files to follow this lesson:
 
@@ -28,7 +28,7 @@ $ cd Desktop/MCB585/data
 **Windows Command Prompt:** 
 ~~~
 > dir
-> cd c:\Users\<username>\Desktop\MCB585\data
+> cd C:\Users\<user>\OneDrive\Desktop\MCB585\data
 ~~~
 {: .language-bash}
 

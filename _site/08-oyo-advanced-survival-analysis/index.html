@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2023-09-18 21:10:42 -0700">
+    <meta http-equiv="last-modified" content="2024-08-15 22:01:56 -0700">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -248,7 +248,7 @@
 
   <div class="row">
     <div class="col-md-3">
-      <strong>Class Date:</strong> 9/19/2023 -- On Your Own
+      <strong>Class Date:</strong> 9/26/2024 -- On Your Own
       <br/>
       <strong>Teaching:</strong> 90 min
       <br/>
@@ -439,7 +439,10 @@ to extract the life tables and calculate it manually. Let’s revisity the lifes
 </span><span class="n">legend</span><span class="p">(</span><span class="s2">"bottomright"</span><span class="p">,</span><span class="n">legend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"female"</span><span class="p">,</span><span class="s2">"male"</span><span class="p">),</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"red"</span><span class="p">,</span><span class="s2">"blue"</span><span class="p">))</span><span class="w">
 </span></code></pre></div></div>
 
-<p><img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" width="612" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-4</p>
+</div>
 
 <p> </p>
 
@@ -486,7 +489,10 @@ mortality  on the same plot for comparison. The life tables are stored in
 </span><span class="n">lines</span><span class="p">(</span><span class="n">lt.male</span><span class="o">$</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">lt.male</span><span class="o">$</span><span class="n">lt</span><span class="p">,</span><span class="n">col</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <p><img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="612" style="display: block; margin: auto;" /></p>
+    <div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-5</p>
+</div>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># plot age-specific mortality</span><span class="w">
 </span><span class="n">plot</span><span class="p">(</span><span class="n">lt.female</span><span class="o">$</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">lt.female</span><span class="o">$</span><span class="n">lambdat</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"l"</span><span class="p">,</span><span class="w">
@@ -496,7 +502,10 @@ mortality  on the same plot for comparison. The life tables are stored in
 </span><span class="n">lines</span><span class="p">(</span><span class="n">lt.male</span><span class="o">$</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">lt.male</span><span class="o">$</span><span class="n">lambdat</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <p><img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-5-2.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="612" style="display: block; margin: auto;" /></p>
+    <div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-5-2.png" alt="plot of chunk unnamed-chunk-5" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-5</p>
+</div>
   </blockquote>
 </blockquote>
 
@@ -576,7 +585,10 @@ object: <code class="language-plaintext highlighter-rouge">Surv(time, status == 
      </span><span class="n">main</span><span class="o">=</span><span class="s2">"Survival in AML"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <p><img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" width="612" style="display: block; margin: auto;" /></p>
+    <div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-6</p>
+</div>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create aml life tables and KM plots broken out by treatment (x,  "Maintained" vs. "Not maintained")</span><span class="w">
 </span><span class="n">survfit.aml.by.rx</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">survfit</span><span class="p">(</span><span class="n">Surv</span><span class="p">(</span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">aml</span><span class="p">)</span><span class="w">
@@ -618,7 +630,10 @@ object: <code class="language-plaintext highlighter-rouge">Surv(time, status == 
        </span><span class="n">lty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="s2">"black"</span><span class="p">,</span><span class="w"> </span><span class="s2">"red"</span><span class="p">))</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <p><img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-6-2.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" width="612" style="display: block; margin: auto;" /></p>
+    <div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-6-2.png" alt="plot of chunk unnamed-chunk-6" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-6</p>
+</div>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Perform the log rank test using the R function survdiff().</span><span class="w">
 </span><span class="n">aml.survdiff</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">survdiff</span><span class="p">(</span><span class="n">Surv</span><span class="p">(</span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> 
@@ -674,7 +689,10 @@ the above groups.</p>
 </span><span class="n">legend</span><span class="p">(</span><span class="s2">"bottomright"</span><span class="p">,</span><span class="n">legend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Maintained"</span><span class="p">,</span><span class="s2">"Nonmaintained"</span><span class="p">),</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">,</span><span class="s2">"red"</span><span class="p">))</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <p><img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-7-1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="612" style="display: block; margin: auto;" /></p>
+    <div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-7</p>
+</div>
   </blockquote>
 </blockquote>
 
@@ -782,7 +800,10 @@ rx          1   2   3 &lt;NA&gt;
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <p><img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-9-1.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="612" style="display: block; margin: auto;" /></p>
+    <div class="figure" style="text-align: center">
+<img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-9-1.png" alt="plot of chunk unnamed-chunk-9" width="612" />
+<p class="caption">plot of chunk unnamed-chunk-9</p>
+</div>
 
     <p> </p>
 

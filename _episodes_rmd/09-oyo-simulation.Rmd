@@ -1,6 +1,6 @@
 ---
 title: "Simulating Experiments"
-classdate: "9/21/2023 -- On Your Own"
+classdate: "10/10/2024 -- On Your Own"
 teaching: 90
 exercises: 30
 questions:
@@ -23,9 +23,9 @@ source("../bin/chunk-options.R")
 knitr_fig_path("09-oyo-simulation-")
 ```
 
-## On Your Own
+## In Class
 
-*In Class* we looked at how to conduct a basic power analysis using a t-test. This process relies on the same assumptions that go into a t-test, and in particular that we understand the properties of a t distribution, which is related to the normal distribution. For simple experimental designs--comparing normally distributed phenotype(s) in samples taken randomly and independently from two groups--this process works great. 
+In the last class we looked at how to conduct a basic power analysis using a t-test. This process relies on the same assumptions that go into a t-test, and in particular that we understand the properties of a t distribution, which is related to the normal distribution. For simple experimental designs--comparing normally distributed phenotype(s) in samples taken randomly and independently from two groups--this process works great. 
 
 What happens when our phenotype or experimental design breaks one of the assumptions of a t-test? Maybe our data is not normal; maybe we have a more complex sampling strategy; maybe we are looking at the interaction between multiple phenotypes across time or some other dimension. What do we do now?
 

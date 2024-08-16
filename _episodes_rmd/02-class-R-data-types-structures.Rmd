@@ -1,6 +1,6 @@
 ---
 title: "Basic Data Types and Data Structures in R"
-classdate: "8/29/2023 -- In Class"
+classdate: "8/29/2024 -- In Class"
 teaching: 90
 exercises: 30
 questions:

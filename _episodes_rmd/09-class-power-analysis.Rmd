@@ -1,6 +1,6 @@
 ---
 title: "Power Analysis"
-classdate: "9/21/2023 -- In Class"
+classdate: "10/8/2024 -- In Class"
 teaching: 90
 exercises: 30
 questions:

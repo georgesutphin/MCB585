@@ -188,10 +188,10 @@ Comment liberally in your R scripts. We will discuss best practices in coding an
 You can also use commenting in RStudio to build collapsible sections, allowing you to hide a portion of code that you are not currently working on in order to make the rest easier to navigate. To do so, add a comment line with at least four consecutive "-" (e.g. `#----------`). RStudio will add a small arrow to your script allowing you to collapse or expand all coding that follows until the next `#----` is encountered:
 
 ```{r, eval=FALSE}
-#--------------- Section 1
+# Section 1 ---------------
 print("This is section 1.")
 
-#--------------- Section 2
+# Section 2 ---------------
 print("This is section 2.")
 ```
 

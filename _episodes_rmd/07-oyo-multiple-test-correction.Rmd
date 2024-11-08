@@ -102,7 +102,7 @@ We can calculate the FWER for $$\alpha = 0.05$$ as the number of comparisons, $$
 
 Plotting this equation:
 
-```{r, echo = F}
+```{r, fig.cap="", echo = F}
 # define number of tests
 n.tests <- seq(1,100,0.01)
 
@@ -247,7 +247,7 @@ length(strains.bw.by.sex.holm)
 
 Still 14 strains, so the Holm method produces similar results to the Bonferroni in this case. How do the P-values compare?
 
-```{r}
+```{r, fig.cap=""}
 # plot P-values for Bonferroni vs. Holm with a line for equal values
 plot(bw.by.sex$P.bonferroni, bw.by.sex$P.holm)
 lines(x = c(0,1), y = c(0,1))
@@ -285,7 +285,7 @@ length(strains.bw.by.sex.BH)
 
 Note that the meaning of our P-value threshold is different under FWER and FDR methods. In FDR, by setting $$\alpha = 0.05$$ we are stating that we expect 5% of *significant P-values* to be false positives. Since we now have 19 strains with significant differences in body weight, we expect that ~1 of these strains does not actually have a body weight difference between sexes. Let's compare these P-values to those calculated using the FWER method:
 
-```{r}
+```{r, fig.cap=""}
 # plot P-values for Bonferroni vs. Benjamini-Hochberg with a line for 
 # equal values
 plot(bw.by.sex$P.bonferroni, bw.by.sex$P.BH)
@@ -342,7 +342,7 @@ There are other tests that make different assumptions about your data, sampling,
 > > Next we will take a quick look at the distribution of our variables 
 > > of interest, staring with body weight.
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > qqnorm(body.comp.20$body_weight_g)
 > > qqline(body.comp.20$body_weight_g)
 > > ```
@@ -351,7 +351,7 @@ There are other tests that make different assumptions about your data, sampling,
 > > breaking down our analysis by strain anyway, let's spot check a few 
 > > strains.
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > par(mfrow = c(2,2))
 > > qqnorm(body.comp.20$body_weight_g[body.comp.20$strain == "C57BL/6J"])
 > > qqline(body.comp.20$body_weight_g[body.comp.20$strain == "C57BL/6J"])
@@ -368,7 +368,7 @@ There are other tests that make different assumptions about your data, sampling,
 > > Looks normal enough within each strain to go forward under that assumption. 
 > > Now let's check fat percentage:
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > qqnorm(body.comp.20$percent_fat)
 > > qqline(body.comp.20$percent_fat)
 > > ```
@@ -379,7 +379,7 @@ There are other tests that make different assumptions about your data, sampling,
 > > body weight with respect to non-normality being driven by pooling the 
 > > strains, but to be sure:
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > par(mfrow = c(2,2))
 > > qqnorm(body.comp.20$percent_fat[body.comp.20$strain == "C57BL/6J"])
 > > qqline(body.comp.20$percent_fat[body.comp.20$strain == "C57BL/6J"])
@@ -462,7 +462,8 @@ There are other tests that make different assumptions about your data, sampling,
 > > only maybe half of the strains with a correlation, this may mean that body 
 > > weight is not consistently driven by changes in body composition, but 
 > > perhaps that both lean and fat mass are declining with age. Alternatively, 
-> > sex may be masking an effect in some strains but not others. There are many > > questions we would want to address if we were to move forward with this 
+> > sex may be masking an effect in some strains but not others. There are many 
+> > questions we would want to address if we were to move forward with this 
 > > data set:
 > > 
 > > * Are body weight and sex correlated similarly for each sex within each 

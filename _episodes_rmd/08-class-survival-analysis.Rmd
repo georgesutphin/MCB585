@@ -129,7 +129,7 @@ head(lt)
 
 Now we can plot the survival curve:
 
-```{r}
+```{r, fig.cap=""}
 plot(lt$t,lt$lt, type = "l",
      main="US Survival 2011",
      xlab="Age (years)",ylab="Fraction Surviving")
@@ -151,7 +151,7 @@ The last variable, $$\lambda(t)$$ is called the hazard function (aka hazard rate
 
 $$\lambda(t)$$, while not normally distributed, does not depend on previous observations, and can thus be considered a variable for which observations are independent. This allows us to make statistical comparisons. Let's look at how $$\lambda(t)$$ behaves.
 
-```{r}
+```{r, fig.cap=""}
 # calculate pt and lambdat
 lt$pt <- 1 - lt$qt
 lt$lambdat <- -log(lt$pt)
@@ -166,7 +166,7 @@ plot(lt$t, lt$lambdat, type = "l",
 
 Does that shape look familiar? It appears to increase exponentially with age. Try plotting the y-axis on a log-scale (using the `log = "y"` argument in plot; alternatively, you could plot `log(lt$lambdat)` on the y-axis):
 
-```{r}
+```{r, fig.cap=""}
 plot(lt$t, lt$lambdat, type = "l", log="y",
      main="US Age-Specific Mortality 2011",
      xlab="Age (years)",
@@ -262,7 +262,7 @@ summary(survfit.bub)
 
 Now that we have the survival function, the `plot()` function already knows what we want to do with it: plot the Kaplan-Meier curve:
 
-```{r}
+```{r, fig.cap=""}
 # Plot the Kaplan-Meier curve
 plot(survfit.bub, xlab = "Time (days)", 
      ylab="Fraction surviving", 
@@ -287,7 +287,7 @@ summary(survfit.bub.sex)
 
 Note that `survfit()` builds separate life tables for male and female mice. Now we can use `plot()` to generate the Kaplan-Meier curves for our new `survfit` object:
 
-```{r}
+```{r, fig.cap=""}
 # Plot the Kaplan-Meier curve
 plot(survfit.bub.sex, xlab = "Time (days)", 
      ylab = "Fraction surviving", 
@@ -405,7 +405,7 @@ Incidentally, we can similarly calculate the P-value from a `t` statistic (repor
 > > Start by taking a look at the survival curves to get a sense of the 
 > > data:
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # the study recorded two event types: death and recurrence. We are 
 > > # interested in survival, so we will pull the subset that reports death 
 > > # (etype = 2)

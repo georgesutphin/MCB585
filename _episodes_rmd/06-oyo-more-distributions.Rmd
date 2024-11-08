@@ -106,7 +106,7 @@ Now that we have the tools, a question to consider: is it worth running a statis
 
 So what happens if your data is clearly non-normal? Let's look at plasma triglycerides for our C57BL/6 mice:
 
-```{r}
+```{r, fig.cap=""}
 qqnorm(b6$TG)
 qqline(b6$TG)
 shapiro.test(b6$TG)
@@ -116,7 +116,7 @@ shapiro.test(b6$TG)
 
 This sample looks to be clearly non-normal. In this case the data has a somewhat characteristic shape, with both low and values higher than expected from a normal distribution. What happens if we examine normality of the log of triglycerides?
 
-```{r}
+```{r, fig.cap=""}
 qqnorm(log(b6$TG))
 qqline(log(b6$TG))
 shapiro.test(log(b6$TG))
@@ -145,7 +145,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > 
 > > ## Solution
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # First separate out the A/J data
 > > aj = data.diet[data.diet$strain == "A/J",]
 > > 
@@ -186,7 +186,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 >
 > > ## Solution
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # examine Q-Q plots for B6 and AJ mice separately
 > > qqnorm(b6$bw_gain)
 > > qqline(b6$bw_gain)
@@ -273,7 +273,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 >
 > > ## Solution
 > > 
-> > ```{r, eval = F}
+> > ```{r, fig.cap="", eval = F}
 > > # ---------------------------------------
 > > # Normal Population Distribution
 > > 

@@ -39,9 +39,9 @@ Wouldn't it be nice if we could do just that: run our experiment 10,000 times an
 ### Simulating experiments in advance
 
 Simulations have several advantages, for example:
-* The force you to think through a planned statistical analysis in advance (for best practices, you should be doing this anyway) and work out at least some of the technical issues ahead of time.
+* They force you to think through a planned statistical analysis in advance (for best practices, you should be doing this anyway) and work out at least some of the technical issues ahead of time.
 
-* They give valuable insight into the behavior the phenotype that you are studying.
+* They give valuable insight into the behavior of the phenotype that you are studying.
 
 * They can identify problems with experimental design or practical execution that you would not have considered in advance otherwise. 
 
@@ -68,7 +68,7 @@ Running a simulation is really not that difficult, but requires thinking through
   + **$$H_0$$ is true:** under the null hypothesis, the independent variable does not impact the dependent variable. In this case, we will use the control distribution to draw both samples.
 
 {:start="4"}
-4. Collect a simulated sample of size m and n from your control and treatment groups, respectively (note that m and n can be different). This usually involves drawing random values for the dependent variable from a distribution or pilot data set. Based on (3), we will actually be drawing 3 samples:
+4. Collect simulated samples of size m and n from your control and treatment groups, respectively (note that m and n can be different). This usually involves drawing random values for the dependent variable from a distribution or pilot data set. Based on (3), we will actually be drawing 3 samples:
   + one "control" sample from our *control* population
   + one "treatment" sample from our *treatment* population, to simulate the scenario when $$H_1$$ is true.
   + one "treatment" sample from our *control* population, to simulate the scenario when $$H_0$$ is true.
@@ -188,7 +188,7 @@ samp.b6
 
 To test the sampling procedure, let's draw 10 random samples of 64 mice from both the *control* population, and a *treatment* population with a 20% increase in lifespan, and plot the survival curves for each simulated group alongside the survival curves from the original sample from our inbred lifespan study:
 
-```{r}
+```{r, fig.cap=""}
 # first define the survival curve for the original sample
 survfit.real <- survfit(Surv(lifespan_days, status == 1) ~ 1, data = surv.b6)
 
@@ -222,7 +222,7 @@ That looks like a pretty decent approximation of the real data, and gives some i
 
 For the purposes of this example, we want to know how large we need our sample size to be in order to detect a 20% change at 90% power at a significance level of 0.05 using a log-rank test. As noted above, this style of power analysis always takes in a value for effect size, sample size, and significance level and generates power as an output. What we need to do is run a simulated experiment with a range of sample sizes and figure out which generates a sufficiently high simulated power. Here is how we go about it:
 
-```{r}
+```{r, fig.cap=""}
 # set power parameters
 alpha <- 0.05
 change <- 0.2
@@ -258,7 +258,7 @@ for (i.n in 1:length(n.vec)) {
   #     the current sample
   #  3. record outcome for both comparisons to the outcome matrix
   for (i.samp in 1:n.samp) {
-    # print every 100 samples
+    # print every 250 samples
     if ((i.samp %% 250) == 0) {
       print(paste("Now starting sample",i.samp, "for sample size",n.c))
     }
@@ -363,7 +363,7 @@ Note that the precision of the power and significance calculated based on the si
 > > cycle through the two options for sex (though that is an 
 > > alternative, and would have saved me some lines of code).
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # set power parameters
 > > alpha <- 0.05
 > > change <- 0.15

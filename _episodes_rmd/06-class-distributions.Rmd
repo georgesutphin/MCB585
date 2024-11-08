@@ -155,7 +155,7 @@ The sampling distribution has several key features in relation to the population
 > 
 > > ## Code for distribution graphics
 > > 
-> > ```{r, eval = F}
+> > ```{r, fig.cap="", eval = F}
 > > # ---------------------------------------
 > > # Normal Population Distribution
 > > 
@@ -395,7 +395,7 @@ norm.y <- dnorm(x = norm.x, mean = mean(b6$bw_start), sd = sd(b6$bw_start))
 
 Putting it all together, we can now plot our histogram, observed density function, and theoretical normal density function on the same chart. First we should use our stored values to determine the appropriate plot size.
 
-```{r, echo = -1:-4}
+```{r, fig.cap="", echo = -1:-4}
 hist.bw.b6 <- hist(b6$bw_start, breaks=15, freq = F, plot = F, warn.unused = F)
 dens.bw.b6 <- density(b6$bw_start)
 norm.x <- seq(min(b6$bw_start), max(b6$bw_start), length = 100)
@@ -426,7 +426,7 @@ qqline(b6$bw_start)
 
 In a Q-Q plot, deviation from the line indicate deviation from the normal distribution. A skewed data set, for example, will show deviation from the line at one end or the other. Here are some examples of non-normal data sets and how they might display on a Q-Q plot:
 
-```{r}
+```{r, fig.cap=""}
 # generate a random normal set of 100 points
 x <- rnorm(100) 
 

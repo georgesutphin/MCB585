@@ -163,7 +163,7 @@ Installing package into 'C:/Users/sutph/AppData/Local/R/win-library/4.4'
 package 'pwr' successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-	C:\Users\sutph\AppData\Local\Temp\Rtmp4Gd1hz\downloaded_packages
+	C:\Users\sutph\AppData\Local\Temp\RtmpiyhpFq\downloaded_packages
 ~~~
 {: .output}
 
@@ -171,7 +171,19 @@ The downloaded binary packages are in
 
 ~~~
 library("pwr")
+~~~
+{: .language-r}
 
+
+
+~~~
+Warning: package 'pwr' was built under R version 4.4.2
+~~~
+{: .error}
+
+
+
+~~~
 # load high-fat high-sucrose mouse diet data
 data.diet <- read.delim("./data/b6.aj.hfhs.diet.txt")
 ~~~
@@ -220,10 +232,7 @@ qqline(b6$bw_start)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-5</p>
-</div>
+<img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-5-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -447,10 +456,7 @@ qqline(surv.b6$lifespan_days)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-9-1.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
-</div>
+<img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-9-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -509,10 +515,7 @@ That's much bigger than the sample size needed for body weight! Lifespan has muc
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-11-1.png" alt="plot of chunk unnamed-chunk-11" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-11</p>
-> > </div>
+> > <img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-11-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > Pretty good! On to the power
 > > 
@@ -660,10 +663,7 @@ plot(n.vec,power.vec, type = "l",
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-13-1.png" alt="plot of chunk unnamed-chunk-13" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-13</p>
-</div>
+<img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-13-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -752,10 +752,7 @@ for (i.pwr in 1:length(power.vec)) {
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-14-1.png" alt="plot of chunk unnamed-chunk-14" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-14</p>
-</div>
+<img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-14-1.png" width="612" style="display: block; margin: auto;" />
 
 > ## How much does strain background matter for power?
 > 
@@ -858,10 +855,7 @@ for (i.pwr in 1:length(power.vec)) {
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-15-1.png" alt="plot of chunk unnamed-chunk-15" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-15</p>
-> > </div>
+> > <img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-15-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 
@@ -1028,10 +1022,7 @@ for (i.pwr in 1:length(power.vec)) {
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-17-1.png" alt="plot of chunk unnamed-chunk-17" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-17</p>
-> > </div>
+> > <img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-17-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 
@@ -1195,10 +1186,7 @@ for (i.pwr in 1:length(power.vec)) {
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-19-1.png" alt="plot of chunk unnamed-chunk-19" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-19</p>
-> > </div>
+> > <img src="../fig/rmd-09-class-power-analysis-unnamed-chunk-19-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 

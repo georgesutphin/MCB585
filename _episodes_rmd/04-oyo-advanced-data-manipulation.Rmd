@@ -379,7 +379,7 @@ Consider the `iris` data set. If we want to make a multipanel plot, say with box
 
 Once we set `mfrow` we can then run our previous plot commands in the order we want them displayed. Let's give it a try:
 
-```{r}
+```{r, fig.cap=""}
 # get the current graphical parameters
 old.plot.options <- par() # it never hurts to save a copy of the old parameters, so we can reset them if we break something
 
@@ -426,7 +426,7 @@ head(dat)
 
 What if we want to plot total aneurisms broken down by both gender and treatment group. The `formula` notation used in `boxplot()` makes this pretty straightforward:
 
-```{r}
+```{r, fig.cap=""}
 # use the '+' to indicate multiple grouping variables
 boxplot(Aneurisms_total ~ Group + Gender, data = dat)
 ```
@@ -442,7 +442,7 @@ We can take several steps to improve the look in chart:
 * Make the y-axis label look better with `ylab`.
 * Add all points with `stripchart()`.
 
-```{r}
+```{r, fig.cap=""}
 # draw the box plot first
 boxplot(Aneurisms_total ~ Group + Gender, data = dat,
         xaxt = "n", xlab = "", # turn off all x-axis labeling (so we can redraw it below)
@@ -497,7 +497,7 @@ We don't have the time to do everything, but we will be using both of these char
 >
 > > ## Solution
 > >
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # set data and results directories
 > > data.dir <- "data"
 > > results.dir <- "results"
@@ -548,7 +548,7 @@ We don't have the time to do everything, but we will be using both of these char
 > > quarterly aneurisms and the total yearly aneurisms (you could also look at each quarter
 > > independently).
 > >
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # set data and results directories
 > > data.dir <- "data"
 > > results.dir <- "results"
@@ -594,7 +594,7 @@ We don't have the time to do everything, but we will be using both of these char
 > > ## Solution
 > >
 > >
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # set data and results directories
 > > data.dir <- "data"
 > > results.dir <- "results"

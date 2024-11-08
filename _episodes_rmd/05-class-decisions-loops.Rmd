@@ -153,7 +153,7 @@ head(carSpeeds)
 >
 > For instance, your function should have the following behavior when presented with subsets of the data from the `inflammation-01.csv` data set:
 >
->```{r, echo=-1}
+>```{r, fig.cap="", echo=-1}
 > plot_dist <- function(x, threshold) {
 >    if (length(x) > threshold) {
 >        boxplot(x)
@@ -356,7 +356,7 @@ head(inflam1)
 
 To begin, let's calculate and plot the minimum, maximum, and mean inflammation across patients for each day:
 
-```{r inflammation-01}
+```{r inflammation-01, fig.cap=""}
 # use apply to calculate min, max, and mean inflammation for each day and save them to variables
 avg_day_inflam <- apply(inflam1, 2, mean)
 max_day_inflam <- apply(inflam1, 2, max)
@@ -468,7 +468,7 @@ inflam.files
 
 Now we have a way to pull just the "inflammation" file names out automatically and assign them to a variable, which we can use later. Now that we have the last piece of the puzzle, we can build our loop. The output will be saved to a PDF file with a page graphing the maximum, mean, and minimum inflammation value across patients over time for each file. 
 
-```{r eval=F}
+```{r, fig.cap="", eval=F}
 # First, grab our file list using pattern matching
 inflam.files <- list.files(path = "data", 
                         pattern = "^inflammation-.*.csv$",

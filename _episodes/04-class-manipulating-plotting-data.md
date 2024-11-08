@@ -416,10 +416,7 @@ plot(iris$Petal.Length, iris$Petal.Width)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-15-1.png" alt="plot of chunk unnamed-chunk-15" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-15</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-15-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -475,10 +472,7 @@ plot(iris$Petal.Length, iris$Petal.Width)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-17-1.png" alt="plot of chunk unnamed-chunk-17" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-17</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-17-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -490,10 +484,7 @@ title("Relationship between petal length and petal width")
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-18-1.png" alt="plot of chunk unnamed-chunk-18" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-18</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-18-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -605,10 +596,7 @@ title("Relationship between petal length and petal width")
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-24-1.png" alt="plot of chunk unnamed-chunk-24" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-24</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-24-1.png" width="612" style="display: block; margin: auto;" />
 
 ~~~
 dev.off()
@@ -680,10 +668,7 @@ plot(iris$Petal.Length, iris$Petal.Width,
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-27-1.png" alt="plot of chunk unnamed-chunk-27" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-27</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-27-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -756,10 +741,7 @@ plot(iris$Petal.Length, iris$Petal.Width,
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-30-1.png" alt="plot of chunk unnamed-chunk-30" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-30</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-30-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -906,10 +888,7 @@ plot(iris$Petal.Length, iris$Petal.Width,
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-32-1.png" alt="plot of chunk unnamed-chunk-32" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-32</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-32-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -937,10 +916,7 @@ legend("bottomright", legend = levels(iris$Species), col=col.list, pch=1)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-34-1.png" alt="plot of chunk unnamed-chunk-34" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-34</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-34-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -1026,10 +1002,7 @@ Now we can see that the *Iris setosa* species has the small petals.
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-37-1.png" alt="plot of chunk unnamed-chunk-37" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-37</p>
-> > </div>
+> > <img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-37-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > Option 2 -- Use the `match()` function to determine which color to 
 > > assign to each element of col.vector based on the element of the 
@@ -1119,10 +1092,7 @@ Now we can see that the *Iris setosa* species has the small petals.
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-38-1.png" alt="plot of chunk unnamed-chunk-38" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-38</p>
-> > </div>
+> > <img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-38-1.png" width="612" style="display: block; margin: auto;" />
 > {: .solution}
 {: .challenge}
 
@@ -1165,20 +1135,14 @@ boxplot(iris$Petal.Length ~ iris$Species)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-39-1.png" alt="plot of chunk unnamed-chunk-39" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-39</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-39-1.png" width="612" style="display: block; margin: auto;" />
 
 ~~~
 boxplot(Petal.Length ~ Species, data = iris)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-39-2.png" alt="plot of chunk unnamed-chunk-39" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-39</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-39-2.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -1190,10 +1154,7 @@ stripchart(Petal.Length ~ Species, data = iris, add=TRUE, vert=TRUE)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-40-1.png" alt="plot of chunk unnamed-chunk-40" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-40</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-40-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -1219,10 +1180,7 @@ stripchart(Petal.Length ~ Species, data = iris,
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-41-1.png" alt="plot of chunk unnamed-chunk-41" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-41</p>
-</div>
+<img src="../fig/rmd-04-class-manipulating-plotting-data-unnamed-chunk-41-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 

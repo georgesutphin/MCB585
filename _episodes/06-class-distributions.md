@@ -551,10 +551,7 @@ lines(norm.x,norm.y, col = "blue")
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-class-distributions-unnamed-chunk-9-1.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
-</div>
+<img src="../fig/rmd-06-class-distributions-unnamed-chunk-9-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -601,10 +598,7 @@ mtext("1/x", side = 3, line = -2, adj = 0.1, font = 2, cex = 1.5)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-class-distributions-unnamed-chunk-11-1.png" alt="plot of chunk unnamed-chunk-11" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-11</p>
-</div>
+<img src="../fig/rmd-06-class-distributions-unnamed-chunk-11-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 

@@ -101,10 +101,7 @@ We can calculate the FWER for $$\alpha = 0.05$$ as the number of comparisons, $$
 
 Plotting this equation:
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-2</p>
-</div>
+<img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-2-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -373,10 +370,7 @@ lines(x = c(0,1), y = c(0,1))
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-8-1.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-8</p>
-</div>
+<img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-8-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -447,10 +441,7 @@ lines(x = c(0,1), y = c(0,1))
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-10-1.png" alt="plot of chunk unnamed-chunk-10" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-10</p>
-</div>
+<img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-10-1.png" width="612" style="display: block; margin: auto;" />
 
 ~~~
 # plot P-values for Holm vs. Benjamini-Hochberg with a line for equal 
@@ -460,10 +451,7 @@ lines(x = c(0,1), y = c(0,1))
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-10-2.png" alt="plot of chunk unnamed-chunk-10" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-10</p>
-</div>
+<img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-10-2.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -519,10 +507,7 @@ There are other tests that make different assumptions about your data, sampling,
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-12-1.png" alt="plot of chunk unnamed-chunk-12" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-12</p>
-> > </div>
+> > <img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-12-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > As we have seen that strain can impact normality, and we are 
 > > breaking down our analysis by strain anyway, let's spot check a few 
@@ -542,10 +527,7 @@ There are other tests that make different assumptions about your data, sampling,
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-13-1.png" alt="plot of chunk unnamed-chunk-13" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-13</p>
-> > </div>
+> > <img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-13-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 
@@ -559,10 +541,7 @@ There are other tests that make different assumptions about your data, sampling,
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-14-1.png" alt="plot of chunk unnamed-chunk-14" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-14</p>
-> > </div>
+> > <img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-14-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 
@@ -584,10 +563,7 @@ There are other tests that make different assumptions about your data, sampling,
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-15-1.png" alt="plot of chunk unnamed-chunk-15" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-15</p>
-> > </div>
+> > <img src="../fig/rmd-07-oyo-multiple-test-correction-unnamed-chunk-15-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 
@@ -697,7 +673,8 @@ There are other tests that make different assumptions about your data, sampling,
 > > only maybe half of the strains with a correlation, this may mean that body 
 > > weight is not consistently driven by changes in body composition, but 
 > > perhaps that both lean and fat mass are declining with age. Alternatively, 
-> > sex may be masking an effect in some strains but not others. There are many > > questions we would want to address if we were to move forward with this 
+> > sex may be masking an effect in some strains but not others. There are many 
+> > questions we would want to address if we were to move forward with this 
 > > data set:
 > > 
 > > * Are body weight and sex correlated similarly for each sex within each 

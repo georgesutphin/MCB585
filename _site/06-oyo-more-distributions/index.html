@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2024-08-15 22:01:56 -0700">
+    <meta http-equiv="last-modified" content="2024-11-08 15:54:16 -0700">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -397,10 +397,7 @@ skeptical of your 0.049 t-test p-value (which you should be anyway).</p>
 </span><span class="n">qqline</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">TG</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-6</p>
-</div>
+<p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-6-1.png" width="612" style="display: block; margin: auto;" /></p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">shapiro.test</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">TG</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
@@ -420,10 +417,7 @@ W = 0.83851, p-value = 7.657e-09
 </span><span class="n">qqline</span><span class="p">(</span><span class="nf">log</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">TG</span><span class="p">))</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-7</p>
-</div>
+<p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-7-1.png" width="612" style="display: block; margin: auto;" /></p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">shapiro.test</span><span class="p">(</span><span class="nf">log</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">TG</span><span class="p">))</span><span class="w">
 </span></code></pre></div></div>
@@ -485,20 +479,14 @@ analysis using the A/J strain. In particular,</p>
 </span><span class="n">lines</span><span class="p">(</span><span class="n">norm.x</span><span class="p">,</span><span class="n">norm.y</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"blue"</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-8-1.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-8</p>
-</div>
+    <p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-8-1.png" width="612" style="display: block; margin: auto;" /></p>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># generate the Q-Q plot</span><span class="w">
 </span><span class="n">qqnorm</span><span class="p">(</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_start</span><span class="p">)</span><span class="w">
 </span><span class="n">qqline</span><span class="p">(</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_start</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-8-2.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-8</p>
-</div>
+    <p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-8-2.png" width="612" style="display: block; margin: auto;" /></p>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># conduct the Shapiro-Wilk test</span><span class="w">
 </span><span class="n">shapiro.test</span><span class="p">(</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_start</span><span class="p">)</span><span class="w">
@@ -530,10 +518,7 @@ Can we use this directly? Is there a better metric to assess change in body weig
 </span><span class="n">qqline</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_gain</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-1.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
-</div>
+    <p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-1.png" width="612" style="display: block; margin: auto;" /></p>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">shapiro.test</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_gain</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
@@ -549,10 +534,7 @@ W = 0.93757, p-value = 0.0001893
 </span><span class="n">qqline</span><span class="p">(</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_gain</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-2.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
-</div>
+    <p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-2.png" width="612" style="display: block; margin: auto;" /></p>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">shapiro.test</span><span class="p">(</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_gain</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
@@ -569,10 +551,7 @@ W = 0.94935, p-value = 0.001068
 </span><span class="n">qqline</span><span class="p">(</span><span class="nf">log</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_gain</span><span class="p">))</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-3.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
-</div>
+    <p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-3.png" width="612" style="display: block; margin: auto;" /></p>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">shapiro.test</span><span class="p">(</span><span class="nf">log</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_gain</span><span class="p">))</span><span class="w">
 </span></code></pre></div>    </div>
@@ -588,10 +567,7 @@ W = 0.88267, p-value = 3.692e-07
 </span><span class="n">qqline</span><span class="p">(</span><span class="nf">log</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_gain</span><span class="p">))</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-4.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
-</div>
+    <p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-4.png" width="612" style="display: block; margin: auto;" /></p>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">shapiro.test</span><span class="p">(</span><span class="nf">log</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_gain</span><span class="p">))</span><span class="w">
 </span></code></pre></div>    </div>
@@ -608,10 +584,7 @@ W = 0.88267, p-value = 3.692e-07
 </span><span class="n">qqline</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_gain</span><span class="o">/</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_start</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-5.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
-</div>
+    <p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-5.png" width="612" style="display: block; margin: auto;" /></p>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">shapiro.test</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_gain</span><span class="o">/</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_start</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
@@ -627,10 +600,7 @@ W = 0.98215, p-value = 0.2167
 </span><span class="n">qqline</span><span class="p">(</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_gain</span><span class="o">/</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_start</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-6.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
-</div>
+    <p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-6.png" width="612" style="display: block; margin: auto;" /></p>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">shapiro.test</span><span class="p">(</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_gain</span><span class="o">/</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_start</span><span class="p">)</span><span class="w">
 </span></code></pre></div>    </div>
@@ -647,10 +617,7 @@ W = 0.95953, p-value = 0.005023
 </span><span class="n">qqline</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_gain</span><span class="o">/</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_start</span><span class="p">))</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-7.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
-</div>
+    <p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-7.png" width="612" style="display: block; margin: auto;" /></p>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">shapiro.test</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_gain</span><span class="o">/</span><span class="n">b6</span><span class="o">$</span><span class="n">bw_start</span><span class="p">))</span><span class="w">
 </span></code></pre></div>    </div>
@@ -666,10 +633,7 @@ W = 0.97056, p-value = 0.02933
 </span><span class="n">qqline</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_gain</span><span class="o">/</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_start</span><span class="p">))</span><span class="w">
 </span></code></pre></div>    </div>
 
-    <div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-8.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-9</p>
-</div>
+    <p><img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-8.png" width="612" style="display: block; margin: auto;" /></p>
 
     <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="n">shapiro.test</span><span class="p">(</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_gain</span><span class="o">/</span><span class="n">aj</span><span class="o">$</span><span class="n">bw_start</span><span class="p">))</span><span class="w">
 </span></code></pre></div>    </div>

@@ -151,10 +151,7 @@ qqline(b6$TG)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-6</p>
-</div>
+<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-6-1.png" width="612" style="display: block; margin: auto;" />
 
 ~~~
 shapiro.test(b6$TG)
@@ -183,10 +180,7 @@ qqline(log(b6$TG))
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-7</p>
-</div>
+<img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-7-1.png" width="612" style="display: block; margin: auto;" />
 
 ~~~
 shapiro.test(log(b6$TG))
@@ -251,10 +245,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-8-1.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-8</p>
-> > </div>
+> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-8-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > # generate the Q-Q plot
@@ -263,10 +254,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-8-2.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-8</p>
-> > </div>
+> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-8-2.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > # conduct the Shapiro-Wilk test
@@ -305,10 +293,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-1.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-9</p>
-> > </div>
+> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > shapiro.test(b6$bw_gain)
@@ -334,10 +319,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-2.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-9</p>
-> > </div>
+> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-2.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > shapiro.test(aj$bw_gain)
@@ -364,10 +346,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-3.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-9</p>
-> > </div>
+> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-3.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > shapiro.test(log(b6$bw_gain))
@@ -393,10 +372,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-4.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-9</p>
-> > </div>
+> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-4.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > shapiro.test(log(b6$bw_gain))
@@ -423,10 +399,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-5.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-9</p>
-> > </div>
+> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-5.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > shapiro.test(b6$bw_gain/b6$bw_start)
@@ -452,10 +425,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-6.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-9</p>
-> > </div>
+> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-6.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > shapiro.test(aj$bw_gain/aj$bw_start)
@@ -482,10 +452,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-7.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-9</p>
-> > </div>
+> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-7.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > shapiro.test(sqrt(b6$bw_gain/b6$bw_start))
@@ -511,10 +478,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-8.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-9</p>
-> > </div>
+> > <img src="../fig/rmd-06-oyo-more-distributions-unnamed-chunk-9-8.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > >  shapiro.test(sqrt(aj$bw_gain/aj$bw_start))

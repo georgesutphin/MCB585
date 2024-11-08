@@ -61,7 +61,7 @@ str(summary.bub)
 
 This object has a variable called `strata` that defines the groups by which the comparison is broken down, and thus the defining feature for the two separate life tables stored within the object. You can use this to extract the separate life table columns for each sex from `summary.bub`. Here we will just extract the specific columns that we need to calculate $$\mu_x$$:
 
-```{r}
+```{r, fig.cap=""}
 # extract age, number of deaths, and number at risk at each age from the
 # life tables stored in `summary.bub`. Note that the names assigned to the 
 # "strata" are in the form "<variable>=<value>", so we use "sex=f" to extract
@@ -109,7 +109,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > 
 > > ## Solution
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # load data
 > > lt.male <- read.delim("./data/US2011.life.table.male.txt")
 > > lt.female <- read.delim("./data/US2011.life.table.female.txt")
@@ -169,7 +169,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > > ## Solution
 > > 
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # load the survival package
 > > library("survival")
 > > 
@@ -210,7 +210,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > > Extra challenge: calculate and plot age-specific mortality ($$\mu_x$$) for 
 > > the above groups.
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # first we need to assign the life table summary to an object
 > > aml.lt <- summary(survfit.aml.by.rx)
 > > 
@@ -283,7 +283,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > > 
 > > Again, we will start by taking a look at the survival curves for each tumor grade. We can do this using a `for` loop and building a 3-panel figure:.
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # like before, we will grab just the subset of data for the "death" events, 
 > > # since we are not looking at recurrence in this exercise
 > > colon.death <- colon[colon$etype == 2,]
@@ -396,7 +396,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > 
 > > ## Solution
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # load survival package (if you don't already have it loaded)
 > > library("survival")
 > > 

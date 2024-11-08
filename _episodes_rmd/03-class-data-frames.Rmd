@@ -367,7 +367,7 @@ setosa <- iris[iris$Species == "setosa",]
 
 > ## Combining concepts -- subsetting and counting
 >
-> How many flower of each species in the current data set have petal length less than 3x the petal width?
+> How many flowers of each species in the current data set have petal length less than 3x the petal width?
 > 
 > > ## Solution
 > > ```{r}
@@ -621,7 +621,7 @@ write.csv(carSpeeds, file = 'data/car-speeds-corrected.csv')
 
 If you open the file, you'll see that it has header names, because the data had headers within R, but that there are also numbers in the first column.
 
-```{r, fig.align="left", out.width = "350px", echo = FALSE}
+```{r, fig.cap="", fig.align="left", out.width = "350px", echo = FALSE}
 include_graphics("../fig/01-supp-csv-with-row-nums.png")
 ```
 
@@ -642,7 +642,7 @@ write.csv(carSpeeds, file = 'data/car-speeds-cleaned.csv', row.names = FALSE)
 
 Now we see:
 
-```{r, fig.align="left", out.width = "350px", echo = FALSE}
+```{r, fig.cap="", fig.align="left", out.width = "350px", echo = FALSE}
 include_graphics("../fig/01-supp-csv-without-row-nums.png")
 ```
 
@@ -686,7 +686,7 @@ write.csv(carSpeeds,
 
 And we see:
 
-```{r, fig.align="left", out.width = "350px", echo = FALSE}
+```{r, fig.cap="", fig.align="left", out.width = "350px", echo = FALSE}
 include_graphics("../fig/01-supp-csv-with-special-NA.png")
 ```
 

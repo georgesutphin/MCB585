@@ -95,30 +95,21 @@ Beyond that, the best way to learn how to use `if` statements effectively is to 
 > ~~~
 > {: .language-r}
 > 
-> <div class="figure" style="text-align: center">
-> <img src="../fig/rmd-05-oyo-more-decisions-loops-unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2" width="612" />
-> <p class="caption">plot of chunk unnamed-chunk-2</p>
-> </div>
+> <img src="../fig/rmd-05-oyo-more-decisions-loops-unnamed-chunk-2-1.png" width="612" style="display: block; margin: auto;" />
 > 
 > ~~~
 > plot_dist(dat[, 10], threshold = 10, use_boxplot = FALSE)  # day (column) 10 - create histogram
 > ~~~
 > {: .language-r}
 > 
-> <div class="figure" style="text-align: center">
-> <img src="../fig/rmd-05-oyo-more-decisions-loops-unnamed-chunk-2-2.png" alt="plot of chunk unnamed-chunk-2" width="612" />
-> <p class="caption">plot of chunk unnamed-chunk-2</p>
-> </div>
+> <img src="../fig/rmd-05-oyo-more-decisions-loops-unnamed-chunk-2-2.png" width="612" style="display: block; margin: auto;" />
 > 
 > ~~~
 > plot_dist(dat[1:5, 10], threshold = 10)                    # samples (rows) 1-5 on day (column) 10
 > ~~~
 > {: .language-r}
 > 
-> <div class="figure" style="text-align: center">
-> <img src="../fig/rmd-05-oyo-more-decisions-loops-unnamed-chunk-2-3.png" alt="plot of chunk unnamed-chunk-2" width="612" />
-> <p class="caption">plot of chunk unnamed-chunk-2</p>
-> </div>
+> <img src="../fig/rmd-05-oyo-more-decisions-loops-unnamed-chunk-2-3.png" width="612" style="display: block; margin: auto;" />
 >
 > > ## Solution
 > > ~~~
@@ -683,8 +674,8 @@ gc() # clean things up first
 
 ~~~
           used (Mb) gc trigger (Mb) max used (Mb)
-Ncells  650235 34.8    1325472 70.8  1325472 70.8
-Vcells 1215789  9.3    8388608 64.0  2212466 16.9
+Ncells  649987 34.8    1325484 70.8  1325484 70.8
+Vcells 1215230  9.3    8388608 64.0  2210041 16.9
 ~~~
 {: .output}
 
@@ -702,7 +693,7 @@ system.time(avg <- for(i in 1:100) {analyze(inflam.files)})
 
 ~~~
    user  system elapsed 
-   2.15    0.39    2.58 
+   2.42    0.25    2.81 
 ~~~
 {: .output}
 
@@ -717,7 +708,7 @@ system.time(avg <- for(i in 1:100) {analyze2(inflam.files)})
 
 ~~~
    user  system elapsed 
-   2.20    0.35    2.60 
+   2.33    0.33    2.71 
 ~~~
 {: .output}
 

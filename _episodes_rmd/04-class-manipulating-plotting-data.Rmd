@@ -222,7 +222,7 @@ The basic plot function in R is called, conveniently, `plot()`. Let's take a qui
 
 In it's most basic form, `plot(x,y)` function will create a scatter plot with points defined by the vectors `x` and `y`. Let's start out with the iris data set and look at the relationship between petal length and width:
 
-```{r}
+```{r, fig.cap=""}
 plot(iris$Petal.Length, iris$Petal.Width)
 ```
 
@@ -272,7 +272,7 @@ quartz() # MacOS
 
 Now recreate our above plot:
 
-```{r}
+```{r, fig.cap=""}
 plot(iris$Petal.Length, iris$Petal.Width)
 ```
 
@@ -280,7 +280,7 @@ plot(iris$Petal.Length, iris$Petal.Width)
 
 Note that we can now add additional elements to this plot. Let's add a chart title:
 
-```{r, echo=-1}
+```{r, fig.cap="", echo=-1}
 plot(iris$Petal.Length, iris$Petal.Width)
 title("Relationship between petal length and petal width")
 ```
@@ -370,7 +370,7 @@ dev.cur()
 
 Let's give it our earlier `plot()` and `title()` commands, and then turn off the device (using `dev.off()`) to complete and close the file.
 
-```{r}
+```{r, fig.cap=""}
 plot(iris$Petal.Length, iris$Petal.Width)
 title("Relationship between petal length and petal width")
 dev.off()
@@ -421,7 +421,7 @@ Okay, so we know how to generate a chart. Clearly the default parameters are not
 
 For now, we will just use the plot window in RStudio to demonstrate a few of the features of `plot()`. To make sure you don't have any open graphics devices, run `dev.off()` a few times before moving forward.
 
-```{r}
+```{r, fig.cap=""}
 plot(iris$Petal.Length, iris$Petal.Width,
      xlab = "Petal Length (cm)", 
      ylab = "Petal Width (cm)") 
@@ -452,7 +452,7 @@ To request a specific color, simply specify the color name as a character string
 
 First, we can just specify a color for the whole plot using the argument `col = "<color name>"`.
 
-```{r}
+```{r, fig.cap=""}
 plot(iris$Petal.Length, iris$Petal.Width,
      xlab = "Petal Length (cm)", ylab = "Petal Width (cm)",
      col = "blue")
@@ -492,7 +492,7 @@ length(iris$Species) == length(col.vector)
 
 Now that we have our color assignments stored in the `col.vector` variable, we can use that to color our plot by species.
 
-```{r}
+```{r, fig.cap=""}
 plot(iris$Petal.Length, iris$Petal.Width,
      xlab = "Petal Length (cm)", ylab = "Petal Width (cm)",
      col = col.vector)
@@ -516,7 +516,7 @@ At a minimum, we need to give it the following arguments:
 * `col` tells R the colors to display. We want to give it the same color order that we used to generate the species-matched color list.
 * `pch` tells R the type of symbol to display. By default, the `plot()` function sets `pch = 1`, but this does not have a default value in `legend()` for some reason. For now we want `pch = 1` to match the `plot()` default.
 
-```{r, echo=-1}
+```{r, fig.cap="", echo=-1}
 plot(iris$Petal.Length, iris$Petal.Width,xlab = "Petal Length (cm)", ylab = "Petal Width (cm)", col = col.vector)
 legend("bottomright", legend = levels(iris$Species), col=col.list, pch=1)
 ```
@@ -558,7 +558,7 @@ Now we can see that the *Iris setosa* species has the small petals.
 > > Option 1 -- just convert the character to a factor
 > > 
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # Add the `as.factor()` function to the indexing when defining col.list
 > > col.vector <- col.list[as.factor(iris$Species)]
 > > col.vector
@@ -575,7 +575,7 @@ Now we can see that the *Iris setosa* species has the small petals.
 > > assign to each element of col.vector based on the element of the 
 > > species character vector.
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # Now, since we don't have the underlying numeric structure of the 
 > > # factor, we need a  way to generate the same index list with a 
 > > # character vector. We can do this using the match() function.
@@ -636,7 +636,7 @@ We can use the `boxplot()` function to generate box and whisker plots in R. To d
 
 You can also provide the name of the data frame using the `data` argument, and then just use the column names directly in the formula. Let's give both a try for Petal Length separated by Species in the iris dataset. These statements are equivalent, except for the axis labels:
 
-```{r}
+```{r, fig.cap=""}
 boxplot(iris$Petal.Length ~ iris$Species)
 boxplot(Petal.Length ~ Species, data = iris)
 ```
@@ -645,7 +645,7 @@ boxplot(Petal.Length ~ Species, data = iris)
 
 It is a best practice to show all your data points (at least until you have hundreds or thousands) on box plots, which we can add to our plot using the `stripchart()` function. The basic format is similar to that for `boxplot()`. We need to add a couple of arguments to make it work. The first is `add = TRUE`. This tells R to add the points to the current plot, instead of generating a new plot (which is the default behavior). The second is `vert = TRUE`, which tells R that we want the data plotted vertically (horizontal is the default for some reason). Let's try it:
 
-```{r, echo=-1}
+```{r, fig.cap="", echo=-1}
 boxplot(Petal.Length ~ Species, data = iris)
 stripchart(Petal.Length ~ Species, data = iris, add=TRUE, vert=TRUE)
 ```
@@ -664,7 +664,7 @@ We will make the following changes:
 * `pch = 16` in `stripchart()` changes the point from an open square to a solid circle, which is easier to see against the box plot.
 * `method = "jitter"` in `stripchart()` offsets each point in the "x" direction by a small random amount so that you can see overlapping points.
 
-```{r}
+```{r, fig.cap=""}
 boxplot(Petal.Length ~ Species, data = iris,
         outline = FALSE, ylab = "Petal Length (cm)")
 stripchart(Petal.Length ~ Species, data = iris,

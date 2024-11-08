@@ -268,20 +268,14 @@ head(carSpeeds)
 >~~~
 >{: .language-r}
 >
-><div class="figure" style="text-align: center">
-><img src="../fig/rmd-05-class-decisions-loops-unnamed-chunk-10-1.png" alt="plot of chunk unnamed-chunk-10" width="612" />
-><p class="caption">plot of chunk unnamed-chunk-10</p>
-></div>
+><img src="../fig/rmd-05-class-decisions-loops-unnamed-chunk-10-1.png" width="612" style="display: block; margin: auto;" />
 >
 >~~~
 > plot_dist(dat[1:5, 10], threshold = 10)  # samples (rows) 1-5 on day (column) 10
 >~~~
 >{: .language-r}
 >
-><div class="figure" style="text-align: center">
-><img src="../fig/rmd-05-class-decisions-loops-unnamed-chunk-10-2.png" alt="plot of chunk unnamed-chunk-10" width="612" />
-><p class="caption">plot of chunk unnamed-chunk-10</p>
-></div>
+><img src="../fig/rmd-05-class-decisions-loops-unnamed-chunk-10-2.png" width="612" style="display: block; margin: auto;" />
 >
 > > ## Solution
 > > ~~~
@@ -662,10 +656,7 @@ legend(x = "topright", # location on chart
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-05-class-decisions-loops-inflammation-01-1.png" alt="plot of chunk inflammation-01" width="612" />
-<p class="caption">plot of chunk inflammation-01</p>
-</div>
+<img src="../fig/rmd-05-class-decisions-loops-inflammation-01-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 

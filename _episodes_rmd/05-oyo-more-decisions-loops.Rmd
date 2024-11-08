@@ -89,7 +89,7 @@ Beyond that, the best way to learn how to use `if` statements effectively is to 
 > A histogram is made with the `hist()` command in R. Here is how we want 
 > `plot_dist()` to behave:
 >
-> ```{r, echo=-1}
+> ```{r, fig.cap="", echo=-1}
 > plot_dist <- function(x, threshold, use_boxplot = TRUE) {
 >    if (length(x) > threshold && use_boxplot) {
 >        boxplot(x)
@@ -611,7 +611,7 @@ You will sometimes see claims that `apply` functions run faster than a `for` loo
 > 
 > > ## Solution
 > > 
-> > ```{r, eval=FALSE}
+> > ```{r, fig.cap="", eval=FALSE}
 > > # Indicate the patient (aka row) number that we want to extract
 > > patient.id <- 1
 > > 

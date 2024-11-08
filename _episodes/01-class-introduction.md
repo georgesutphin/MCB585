@@ -251,10 +251,10 @@ You can also use commenting in RStudio to build collapsible sections, allowing y
 
 
 ~~~
-#--------------- Section 1
+# Section 1 ---------------
 print("This is section 1.")
 
-#--------------- Section 2
+# Section 2 ---------------
 print("This is section 2.")
 ~~~
 {: .language-r}

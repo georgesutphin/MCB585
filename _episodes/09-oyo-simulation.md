@@ -38,9 +38,9 @@ Wouldn't it be nice if we could do just that: run our experiment 10,000 times an
 ### Simulating experiments in advance
 
 Simulations have several advantages, for example:
-* The force you to think through a planned statistical analysis in advance (for best practices, you should be doing this anyway) and work out at least some of the technical issues ahead of time.
+* They force you to think through a planned statistical analysis in advance (for best practices, you should be doing this anyway) and work out at least some of the technical issues ahead of time.
 
-* They give valuable insight into the behavior the phenotype that you are studying.
+* They give valuable insight into the behavior of the phenotype that you are studying.
 
 * They can identify problems with experimental design or practical execution that you would not have considered in advance otherwise. 
 
@@ -67,7 +67,7 @@ Running a simulation is really not that difficult, but requires thinking through
   + **$$H_0$$ is true:** under the null hypothesis, the independent variable does not impact the dependent variable. In this case, we will use the control distribution to draw both samples.
 
 {:start="4"}
-4. Collect a simulated sample of size m and n from your control and treatment groups, respectively (note that m and n can be different). This usually involves drawing random values for the dependent variable from a distribution or pilot data set. Based on (3), we will actually be drawing 3 samples:
+4. Collect simulated samples of size m and n from your control and treatment groups, respectively (note that m and n can be different). This usually involves drawing random values for the dependent variable from a distribution or pilot data set. Based on (3), we will actually be drawing 3 samples:
   + one "control" sample from our *control* population
   + one "treatment" sample from our *treatment* population, to simulate the scenario when $$H_1$$ is true.
   + one "treatment" sample from our *control* population, to simulate the scenario when $$H_0$$ is true.
@@ -137,7 +137,7 @@ x
 
 
 ~~~
- [1] 1052  929  895  901  922  901  952  973  859  272
+ [1]  782  929  391  795  952  897 1049 1049  866  706
 ~~~
 {: .output}
 
@@ -217,8 +217,8 @@ samp.b6
 
 
 ~~~
- [1]  697.9714  780.9557  622.8860  838.7997  842.2156  919.7381 1026.1157
- [8]  732.2792  850.4204  881.4376
+ [1] 1073.2743  882.6862  734.0184  813.7814  996.8733 1025.8091  733.6380
+ [8]  818.8026  818.6513  921.5721
 ~~~
 {: .output}
 
@@ -244,8 +244,8 @@ samp.b6
 
 
 ~~~
- [1]  826.4314 1105.7478 1136.3552 1132.0799  938.7596  897.5862 1077.9679
- [8] 1098.2434 1201.8992 1169.3312
+ [1] 1145.172 1194.522 1069.880 1073.353 1159.041 1198.010 1253.910 1044.461
+ [9] 1144.861 1184.202
 ~~~
 {: .output}
 
@@ -280,10 +280,7 @@ for (i in 1:10) {
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-7</p>
-</div>
+<img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-7-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -331,7 +328,7 @@ for (i.n in 1:length(n.vec)) {
   #     the current sample
   #  3. record outcome for both comparisons to the outcome matrix
   for (i.samp in 1:n.samp) {
-    # print every 100 samples
+    # print every 250 samples
     if ((i.samp %% 250) == 0) {
       print(paste("Now starting sample",i.samp, "for sample size",n.c))
     }
@@ -435,16 +432,16 @@ outcome
 
 ~~~
     N alpha power
-1   5 0.072 0.418
-2  10 0.059 0.741
-3  15 0.082 0.909
-4  20 0.053 0.970
-5  25 0.059 0.989
-6  30 0.055 0.995
-7  35 0.060 1.000
-8  40 0.058 1.000
-9  45 0.053 1.000
-10 50 0.052 1.000
+1   5 0.067 0.407
+2  10 0.055 0.748
+3  15 0.063 0.914
+4  20 0.054 0.977
+5  25 0.056 0.989
+6  30 0.061 0.997
+7  35 0.058 0.999
+8  40 0.053 1.000
+9  45 0.066 1.000
+10 50 0.065 1.000
 ~~~
 {: .output}
 
@@ -456,10 +453,7 @@ hist(outcome$alpha, breaks = 15, freq = F)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-8-1.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-8</p>
-</div>
+<img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-8-1.png" width="612" style="display: block; margin: auto;" />
 
 ~~~
 # generate power plot to compare power vs. sample size
@@ -470,10 +464,7 @@ plot(outcome$power, outcome$N, type = "l",
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-8-2.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-8</p>
-</div>
+<img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-8-2.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -725,16 +716,16 @@ Note that the precision of the power and significance calculated based on the si
 > > 
 > > ~~~
 > >     N alpha power
-> > 1   5 0.062 0.185
-> > 2  10 0.057 0.394
-> > 3  15 0.061 0.582
-> > 4  20 0.061 0.701
-> > 5  25 0.065 0.780
-> > 6  30 0.052 0.849
-> > 7  35 0.054 0.915
-> > 8  40 0.056 0.944
-> > 9  45 0.052 0.963
-> > 10 50 0.030 0.979
+> > 1   5 0.081 0.216
+> > 2  10 0.069 0.413
+> > 3  15 0.061 0.607
+> > 4  20 0.058 0.708
+> > 5  25 0.054 0.782
+> > 6  30 0.049 0.853
+> > 7  35 0.056 0.920
+> > 8  40 0.069 0.945
+> > 9  45 0.067 0.957
+> > 10 50 0.053 0.984
 > > ~~~
 > > {: .output}
 > > 
@@ -749,16 +740,16 @@ Note that the precision of the power and significance calculated based on the si
 > > 
 > > ~~~
 > >     N alpha power
-> > 1   5 0.086 0.492
-> > 2  10 0.079 0.830
-> > 3  15 0.095 0.933
-> > 4  20 0.103 0.985
-> > 5  25 0.107 0.996
-> > 6  30 0.098 1.000
+> > 1   5 0.066 0.494
+> > 2  10 0.094 0.820
+> > 3  15 0.076 0.949
+> > 4  20 0.086 0.989
+> > 5  25 0.101 0.998
+> > 6  30 0.113 1.000
 > > 7  35 0.128 1.000
-> > 8  40 0.121 1.000
-> > 9  45 0.155 1.000
-> > 10 50 0.182 1.000
+> > 8  40 0.137 1.000
+> > 9  45 0.166 1.000
+> > 10 50 0.141 1.000
 > > ~~~
 > > {: .output}
 > > 
@@ -775,10 +766,7 @@ Note that the precision of the power and significance calculated based on the si
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-10-1.png" alt="plot of chunk unnamed-chunk-10" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-10</p>
-> > </div>
+> > <img src="../fig/rmd-09-oyo-simulation-unnamed-chunk-10-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 

@@ -184,7 +184,7 @@ b6 <- data.diet[data.diet$strain == "C57BL/6J",]
 
 Because the power analysis is based on a t-test, we must be sure that we satisfy the assumptions of the t-test in order for the resulting power analysis to be valid. Recall that the data is close to normal: 
 
-```{r}
+```{r, fig.cap=""}
 qqnorm(b6$bw_start)
 qqline(b6$bw_start)
 ```
@@ -324,7 +324,7 @@ surv.b6 <- data.surv[data.surv$strain %in% "C57BL/6J",]
 
 Okay, we are in business. Let's see if the data is normal.
 
-```{r}
+```{r, fig.cap=""}
 qqnorm(surv.b6$lifespan_days)
 qqline(surv.b6$lifespan_days)
 ```
@@ -363,7 +363,7 @@ That's much bigger than the sample size needed for body weight! Lifespan has muc
 > > ## Solution
 > > 
 > > First load the data and take a look:
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # load data
 > > data.surv <- read.delim("./data/inbred.lifespan.txt")
 > > 
@@ -408,7 +408,7 @@ The previous examples give us an idea of what to expect when we have a clear ide
 
 It is often useful, particularly in early-stage planning, to have an idea of what the relationship looks like between sample size, power, and effect size. We can generate useful power reference charts by by repeating the power analysis to calculate sample size requirements over a range of power values and plotting the outcome. 
 
-```{r}
+```{r, fig.cap=""}
 # set desired change and significance
 alpha <- 0.05
 change <- 0.2
@@ -455,7 +455,7 @@ The relationship between sample size and power is not linear. This chart illustr
 
 We can go a step further and look at the relationship between effect size, power, and sample size by adding a second, nested `for` loop:
 
-```{r}
+```{r, fig.cap=""}
 # set desired significance
 alpha <- 0.05
 
@@ -530,7 +530,7 @@ for (i.pwr in 1:length(power.vec)) {
 > > ## Solution
 > > 
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # load power library
 > > library("pwr")
 > > 
@@ -644,7 +644,7 @@ for (i.pwr in 1:length(power.vec)) {
 > 
 > > ## Solution
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # load power library
 > > library("pwr")
 > > 
@@ -741,7 +741,7 @@ for (i.pwr in 1:length(power.vec)) {
 > 
 > > ## Solution
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # load power library
 > > library("pwr")
 > > 

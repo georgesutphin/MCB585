@@ -93,10 +93,7 @@ lines(dens.bw.aj, col = "blue")
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-3</p>
-</div>
+<img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-3-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -115,10 +112,7 @@ stripchart(data.diet$bw_start ~ data.diet$strain,     # formula notation to plot
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-4</p>
-</div>
+<img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-4-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -155,10 +149,7 @@ qqline(data.diet$bw_start[data.diet$strain == "C57BL/6J"])
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-5</p>
-</div>
+<img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-5-1.png" width="612" style="display: block; margin: auto;" />
 
 ~~~
 shapiro.test(data.diet$bw_start[data.diet$strain == "C57BL/6J"])
@@ -184,10 +175,7 @@ qqline(data.diet$bw_start[data.diet$strain == "A/J"])
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-5-2.png" alt="plot of chunk unnamed-chunk-5" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-5</p>
-</div>
+<img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-5-2.png" width="612" style="display: block; margin: auto;" />
 
 ~~~
 shapiro.test(data.diet$bw_start[data.diet$strain == "A/J"])
@@ -385,10 +373,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-7</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-7-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > Not really close to normal... We can first try transforming the data 
 > > to see if we can get the distribution to a more normal state. 
@@ -400,10 +385,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-8-1.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-8</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-8-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > qqnorm(exp(iris$Petal.Length))
@@ -411,10 +393,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-8-2.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-8</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-8-2.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > qqnorm(1/iris$Petal.Length)
@@ -422,10 +401,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-8-3.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-8</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-8-3.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > qqnorm((iris$Petal.Length)^2)
@@ -433,10 +409,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-8-4.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-8</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-8-4.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > qqnorm((iris$Petal.Length)^(1/2))
@@ -444,14 +417,12 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-8-5.png" alt="plot of chunk unnamed-chunk-8" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-8</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-8-5.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > Nothing really helps, so that means nonparametric testing!
 > > 
-> > Referencing the above chart, the best fir is the non-parametric ANOVA, > > also called the Kruskal-Wallis rank sum test. From the UCLA site 
+> > Referencing the above chart, the best fir is the non-parametric ANOVA, 
+> > also called the Kruskal-Wallis rank sum test. From the UCLA site 
 > > above, we can find the appropriate R function:
 > > 
 > > 
@@ -482,10 +453,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-10-1.png" alt="plot of chunk unnamed-chunk-10" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-10</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-10-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 
@@ -504,15 +472,14 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-11-1.png" alt="plot of chunk unnamed-chunk-11" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-11</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-11-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 
 > > Assuming a normal distribution is warranted in this case because each 
-> > of the independent samples appears to come from a normally distributed > > population. However, even if this sort of situation is present in your > > dataset, the source of the deviation from normality may not be your 
+> > of the independent samples appears to come from a normally distributed 
+> > population. However, even if this sort of situation is present in your 
+> > dataset, the source of the deviation from normality may not be your 
 > > independent variable of interest. It may be that there is an unknown 
 > > (and unmeasured) independent variable. If you can't identify what is 
 > > driving the non-normality, you have to continue your analysis without 
@@ -572,10 +539,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-13-1.png" alt="plot of chunk unnamed-chunk-13" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-13</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-13-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > qqnorm(data.diet$bw_end)
@@ -583,10 +547,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-13-2.png" alt="plot of chunk unnamed-chunk-13" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-13</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-13-2.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > Starting body weight looks okay, but ending body weight looks very 
 > > skewed. Learning from the above exercise using the `iris` data set, 
@@ -604,10 +565,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-14-1.png" alt="plot of chunk unnamed-chunk-14" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-14</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-14-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > qqnorm(data.diet$bw_start[data.diet$strain == "A/J"])
@@ -617,10 +575,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-14-2.png" alt="plot of chunk unnamed-chunk-14" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-14</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-14-2.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > That looks a lot closer (still a bit skewed on the high body weight 
 > > side for C57BL/6J, but we have almost 100 mice, so we will go ahead 
@@ -705,10 +660,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-16-1.png" alt="plot of chunk unnamed-chunk-16" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-16</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-16-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 
@@ -765,10 +717,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-18-1.png" alt="plot of chunk unnamed-chunk-18" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-18</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-18-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > Looks like a deviation from normality toward the higher end of the body 
 > > weight spectrum. Let's try a log transformation.
@@ -780,10 +729,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-19-1.png" alt="plot of chunk unnamed-chunk-19" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-19</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-19-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > That looks better. Not perfect, but given the large sample size (n = 1187), 
 > > we are going to assume that the sampling distribution is normal). Given our 
@@ -804,10 +750,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-20-1.png" alt="plot of chunk unnamed-chunk-20" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-20</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-20-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 
@@ -850,10 +793,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-22-1.png" alt="plot of chunk unnamed-chunk-22" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-22</p>
-> > </div>
+> > <img src="../fig/rmd-07-class-hypothesis-testing-unnamed-chunk-22-1.png" width="612" style="display: block; margin: auto;" />
 > {: .solution}
 {: .challenge}
 

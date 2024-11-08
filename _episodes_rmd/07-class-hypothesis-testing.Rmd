@@ -73,7 +73,7 @@ We are actually taking two samples, one from the C57BL/6J strain and one from th
 
 First, we will examine the two distributions to see if there is a visual difference. There are a few ways to do this. Let's start by plotting the density functions for the starting body weights for the two strains:
 
-```{r}
+```{r, fig.cap=""}
 # define the density functions
 dens.bw.b6 <- density(data.diet$bw_start[data.diet$strain == "C57BL/6J"])
 dens.bw.aj <- density(data.diet$bw_start[data.diet$strain == "A/J"])
@@ -94,7 +94,7 @@ lines(dens.bw.aj, col = "blue")
 
 Alternatively, we may want to look at the box and whisker plot for this data:
 
-```{r}
+```{r, fig.cap=""}
 boxplot(data.diet$bw_start ~ data.diet$strain,     # formula notation to plot body weight by strain
         xlab = "Strain", ylab = "Body Weight (g)", # add some axis labels
         outline = F)                                # turn off outlier points
@@ -133,7 +133,7 @@ Each statistical test has an underlying set of assumptions. The t-test is the mo
 
 We can check normality using the Q-Q plot and the Shapiro-Wilk test from last class:
 
-```{r}
+```{r, fig.cap=""}
 qqnorm(data.diet$bw_start[data.diet$strain == "C57BL/6J"])
 qqline(data.diet$bw_start[data.diet$strain == "C57BL/6J"])
 shapiro.test(data.diet$bw_start[data.diet$strain == "C57BL/6J"])
@@ -275,7 +275,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > with 3 groups. First we can look at whether our data is normally 
 > > distributed:
 > >
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > qqnorm(iris$Petal.Length)
 > > qqline(iris$Petal.Length)
 > > ```
@@ -283,7 +283,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > Not really close to normal... We can first try transforming the data 
 > > to see if we can get the distribution to a more normal state. 
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > qqnorm(log(iris$Petal.Length))
 > > qqline(log(iris$Petal.Length))
 > > qqnorm(exp(iris$Petal.Length))
@@ -298,7 +298,8 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > 
 > > Nothing really helps, so that means nonparametric testing!
 > > 
-> > Referencing the above chart, the best fir is the non-parametric ANOVA, > > also called the Kruskal-Wallis rank sum test. From the UCLA site 
+> > Referencing the above chart, the best fir is the non-parametric ANOVA, 
+> > also called the Kruskal-Wallis rank sum test. From the UCLA site 
 > > above, we can find the appropriate R function:
 > > 
 > > ```{r}
@@ -308,7 +309,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > We conclude that species does affect petal length in irises. We can 
 > > also visualize the differnece using a boxplot:
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > boxplot(Petal.Length ~ Species, data = iris, outline = F)
 > > stripchart(Petal.Length ~ Species, data = iris, add = T,
 > >            vert = T, pch = 16, method = "jitter")
@@ -319,7 +320,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > As a point of discussion, petal length does follow a reasonably 
 > > normal distribution, if you look within each species:
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > par(mfrow = c(1,3))
 > > qqnorm(iris$Petal.Length[iris$Species == "setosa"])
 > > qqline(iris$Petal.Length[iris$Species == "setosa"])
@@ -332,7 +333,9 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > &nbsp;
 > > 
 > > Assuming a normal distribution is warranted in this case because each 
-> > of the independent samples appears to come from a normally distributed > > population. However, even if this sort of situation is present in your > > dataset, the source of the deviation from normality may not be your 
+> > of the independent samples appears to come from a normally distributed 
+> > population. However, even if this sort of situation is present in your 
+> > dataset, the source of the deviation from normality may not be your 
 > > independent variable of interest. It may be that there is an unknown 
 > > (and unmeasured) independent variable. If you can't identify what is 
 > > driving the non-normality, you have to continue your analysis without 
@@ -359,7 +362,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > Next examine the distribution of the before and after diet body 
 > > weights.
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > qqnorm(data.diet$bw_start)
 > > qqline(data.diet$bw_start)
 > > qqnorm(data.diet$bw_end)
@@ -371,7 +374,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > perhaps this is a strain effect? Let's break it down further 
 > > and recheck.
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > par(mfrow = c(1,2))
 > > 
 > > qqnorm(data.diet$bw_start[data.diet$strain == "C57BL/6J"])
@@ -408,7 +411,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > Diet does significantly effect body weight in both strain backgrounds.
 > > Let's check out the box plot:
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # first we have to build a data frame that has the data in the right 
 > > # format
 > > bw.data <- data.frame(bw = c(data.diet$bw_start, data.diet$bw_end), 
@@ -454,7 +457,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > 
 > > First look at normality within the body weight data.
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > qqnorm(data.bodycomp$body_weight_g)
 > > qqline(data.bodycomp$body_weight_g)
 > > ```
@@ -462,7 +465,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > Looks like a deviation from normality toward the higher end of the body 
 > > weight spectrum. Let's try a log transformation.
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > qqnorm(log(data.bodycomp$body_weight_g))
 > > qqline(log(data.bodycomp$body_weight_g))
 > > ```
@@ -473,7 +476,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > likey normally distributed. It would be tedious to check all of the strains, 
 > > but we can take a quick peak at a selection:
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > par(mfrow = c(1,3))
 > > 
 > > qqnorm(data.bodycomp$body_weight_g[data.bodycomp$strain == "C57BL/6J"])
@@ -500,7 +503,7 @@ Here is an example of a flow chart for choosing a test. Many different versions 
 > > The impact of strain on body weight is highly significant. Check out the 
 > > visualization:
 > > 
-> > ```{r}
+> > ```{r, fig.cap=""}
 > > # first shrink the labels (cex) and add some more space the the bottom margin
 > > par(cex = 0.7, mar = c(12,4,2,2)) 
 > > boxplot(body_weight_g ~ strain, data = data.bodycomp, 

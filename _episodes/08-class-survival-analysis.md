@@ -167,10 +167,7 @@ plot(lt$t,lt$lt, type = "l",
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-4</p>
-</div>
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-4-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp; 
 
@@ -201,10 +198,7 @@ plot(lt$t, lt$lambdat, type = "l",
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-5</p>
-</div>
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-5-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -219,10 +213,7 @@ plot(lt$t, lt$lambdat, type = "l", log="y",
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-6</p>
-</div>
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-6-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -403,10 +394,7 @@ plot(survfit.bub, xlab = "Time (days)",
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-10-1.png" alt="plot of chunk unnamed-chunk-10" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-10</p>
-</div>
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-10-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -501,10 +489,7 @@ legend("topright", lty = 1,
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-12-1.png" alt="plot of chunk unnamed-chunk-12" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-12</p>
-</div>
+<img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-12-1.png" width="612" style="display: block; margin: auto;" />
 
 ***
 ### The log-rank test 
@@ -699,10 +684,7 @@ Incidentally, we can similarly calculate the P-value from a `t` statistic (repor
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-17-1.png" alt="plot of chunk unnamed-chunk-17" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-17</p>
-> > </div>
+> > <img src="../fig/rmd-08-class-survival-analysis-unnamed-chunk-17-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > &nbsp;
 > > 

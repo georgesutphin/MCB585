@@ -921,10 +921,7 @@ legend("bottomright", legend = levels(iris$Species), col=col.list, pch=1)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-oyo-advanced-data-manipulation-unnamed-chunk-27-1.png" alt="plot of chunk unnamed-chunk-27" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-27</p>
-</div>
+<img src="../fig/rmd-04-oyo-advanced-data-manipulation-unnamed-chunk-27-1.png" width="612" style="display: block; margin: auto;" />
 
 ~~~
 # and finally, reset the mfrow argument to a single panel
@@ -975,10 +972,7 @@ boxplot(Aneurisms_total ~ Group + Gender, data = dat)
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-oyo-advanced-data-manipulation-unnamed-chunk-29-1.png" alt="plot of chunk unnamed-chunk-29" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-29</p>
-</div>
+<img src="../fig/rmd-04-oyo-advanced-data-manipulation-unnamed-chunk-29-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -1023,10 +1017,7 @@ legend(x = "top", inset = -0.13, # place the legend on top, but nudge it up a bi
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-04-oyo-advanced-data-manipulation-unnamed-chunk-30-1.png" alt="plot of chunk unnamed-chunk-30" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-30</p>
-</div>
+<img src="../fig/rmd-04-oyo-advanced-data-manipulation-unnamed-chunk-30-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -1083,10 +1074,7 @@ We don't have the time to do everything, but we will be using both of these char
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-04-oyo-advanced-data-manipulation-unnamed-chunk-31-1.png" alt="plot of chunk unnamed-chunk-31" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-31</p>
-> > </div>
+> > <img src="../fig/rmd-04-oyo-advanced-data-manipulation-unnamed-chunk-31-1.png" width="612" style="display: block; margin: auto;" />
 > {: .solution}
 {: .challenge}
 

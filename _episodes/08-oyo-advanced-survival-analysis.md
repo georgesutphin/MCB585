@@ -121,7 +121,7 @@ str(summary.bub)
 
 
 ~~~
-List of 19
+List of 20
  $ n            : int [1:2] 32 32
  $ time         : num [1:45] 266 279 328 343 357 455 457 495 523 538 ...
  $ n.risk       : num [1:45] 24 23 22 21 20 19 18 17 16 15 ...
@@ -138,6 +138,7 @@ List of 19
  $ conf.type    : chr "log"
  $ lower        : num [1:45] 0.882 0.813 0.752 0.697 0.645 ...
  $ upper        : num [1:45] 1 1 1 0.997 0.972 ...
+ $ t0           : num 0
  $ call         : language survfit(formula = Surv(lifespan_days, censor == 0) ~ sex, data = surv.bub)
  $ table        : num [1:2, 1:9] 32 32 32 32 32 ...
   ..- attr(*, "dimnames")=List of 2
@@ -186,10 +187,7 @@ legend("bottomright",legend = c("female","male"), fill = c("red","blue"))
 ~~~
 {: .language-r}
 
-<div class="figure" style="text-align: center">
-<img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4" width="612" />
-<p class="caption">plot of chunk unnamed-chunk-4</p>
-</div>
+<img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-4-1.png" width="612" style="display: block; margin: auto;" />
 
 &nbsp;
 
@@ -237,10 +235,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-5</p>
-> > </div>
+> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-5-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > # plot age-specific mortality
@@ -252,10 +247,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-5-2.png" alt="plot of chunk unnamed-chunk-5" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-5</p>
-> > </div>
+> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-5-2.png" width="612" style="display: block; margin: auto;" />
 > {: .solution}
 {: .challenge}
 
@@ -351,10 +343,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-6</p>
-> > </div>
+> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-6-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > # Create aml life tables and KM plots broken out by treatment (x,  "Maintained" vs. "Not maintained")
@@ -406,10 +395,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-6-2.png" alt="plot of chunk unnamed-chunk-6" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-6</p>
-> > </div>
+> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-6-2.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > ~~~
 > > # Perform the log rank test using the R function survdiff().
@@ -474,10 +460,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-7</p>
-> > </div>
+> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-7-1.png" width="612" style="display: block; margin: auto;" />
 > {: .solution}
 {: .challenge}
 
@@ -600,10 +583,7 @@ Note that these plots can be somewhat sensitive to time periods during the lifes
 > > ~~~
 > > {: .language-r}
 > > 
-> > <div class="figure" style="text-align: center">
-> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-9-1.png" alt="plot of chunk unnamed-chunk-9" width="612" />
-> > <p class="caption">plot of chunk unnamed-chunk-9</p>
-> > </div>
+> > <img src="../fig/rmd-08-oyo-advanced-survival-analysis-unnamed-chunk-9-1.png" width="612" style="display: block; margin: auto;" />
 > > 
 > > 
 > > &nbsp;

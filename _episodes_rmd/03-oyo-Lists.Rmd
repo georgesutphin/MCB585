@@ -1,6 +1,6 @@
 ---
 title: "Lists and Advanced Indexing"
-classdate: "9/10/2024 -- In Class"
+classdate: "9/9/2025 -- In Class"
 teaching: 90
 exercises: 30
 questions:

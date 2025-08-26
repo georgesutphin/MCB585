@@ -1,6 +1,6 @@
 ---
 title: "Data Frames, Basic Indexing, Reading/Writing Data"
-classdate: "9/3/2024 -- In Class"
+classdate: "9/4/2025 -- In Class"
 teaching: 90
 exercises: 30
 questions:

@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2024-11-08 15:54:16 -0700">
+    <meta http-equiv="last-modified" content="2025-08-25 22:23:53 -0700">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -248,7 +248,7 @@
 
   <div class="row">
     <div class="col-md-3">
-      <strong>Class Date:</strong> 8/27/2024 -- On Your Own
+      <strong>Class Date:</strong> 8/26/2025 -- On Your Own
       <br/>
       <strong>Teaching:</strong> 90 min
       <br/>
@@ -424,7 +424,7 @@ code help you understand the script?</p>
 <p>Actually, even this is a bit vague.</p>
 <ul>
   <li>Which science paper? Can you provide a link or Pubmed ID?</li>
-  <li>Which analysis in that paper?</li>
+  <li>Which analyses in that paper?</li>
   <li>What is the purpose of the analysis?</li>
   <li>Which figure(s) are being reproduced?</li>
 </ul>
@@ -499,7 +499,7 @@ code help you understand the script?</p>
   <li>Use only lowercase letters, underscores, and numbers in variable names.</li>
 </ol>
 
-<p>The book <em>R Packages</em> includes a <a href="http://r-pkgs.had.co.nz/style.html">chapter</a> on this and other style considerations.</p>
+<p>The book <em>R Packages</em> includes a <a href="http://r-pkgs.org/">chapter</a> on this and other style considerations.</p>
 
 <p>How closely you follow these standards is up to you. As a good rule of thumb, choose a convention for naming R objects that is descriptive, that you can remember, and that you will stick to using.</p>
 
@@ -508,7 +508,7 @@ code help you understand the script?</p>
 
 <p>It’s easy to annotate and mark your code using <code class="language-plaintext highlighter-rouge">#</code> or <code class="language-plaintext highlighter-rouge">#-</code> to set off sections of your code and to make finding specific parts of your code easier. For example, it’s often helpful when writing code to separate the function definitions. If you create only one or a few custom functions in your script, put them toward the top of your code. If you have written many functions, put them all in their own .R file and then <code class="language-plaintext highlighter-rouge">source</code> those files. <code class="language-plaintext highlighter-rouge">source</code> will define all of these functions so that your code can make use of them as needed.</p>
 
-<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">source</span><span class="p">(</span><span class="s2">"my_genius_fxns.R"</span><span class="p">)</span><span class="w">
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">source</span><span class="p">(</span><span class="s2">"my_genius_fxns.R"</span><span class="p">)</span><span class="w"> </span><span class="c1"># not intended to be run</span><span class="w">
 </span></code></pre></div></div>
 
 <p> </p>
@@ -526,7 +526,9 @@ code help you understand the script?</p>
   </li>
 </ol>
 
-<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># set working directory</span><span class="w">
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## Sample -- not intended to be run</span><span class="w">
+
+</span><span class="c1"># set working directory</span><span class="w">
 </span><span class="n">setwd</span><span class="p">(</span><span class="s2">"C:/Users/Karthik/Documents/sannic-project"</span><span class="p">)</span><span class="w">
 
 </span><span class="c1"># load datasets 1 and 2 from the files subfolder</span><span class="w">
@@ -629,13 +631,13 @@ code help you understand the script?</p>
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error in eval(expr, envir, enclos): object 'x' not found
+<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: object 'x' not found
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">y</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error in eval(expr, envir, enclos): object 'y' not found
+<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: object 'y' not found
 </code></pre></div></div>
 
 <p> </p>
@@ -697,8 +699,8 @@ each stage is indicated by “Vcells” (the V stands for “Vector”). Removin
 </span></code></pre></div></div>
 
 <div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          used (Mb) gc trigger (Mb) max used (Mb)
-Ncells  619330 33.1    1324998 70.8  1324998 70.8
-Vcells 1140471  8.8    8388608 64.0  1901433 14.6
+Ncells  622779 33.3    1335662 71.4  1335662 71.4
+Vcells 1146596  8.8    8388608 64.0  2015311 15.4
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># create a big vector (this can take some time) and recheck memory with </span><span class="w">
@@ -708,8 +710,8 @@ Vcells 1140471  8.8    8388608 64.0  1901433 14.6
 </span></code></pre></div></div>
 
 <div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          used (Mb) gc trigger (Mb) max used (Mb)
-Ncells  619421 33.1    1324998 70.8  1324998 70.8
-Vcells 1240837  9.5    8388608 64.0  8388562 64.0
+Ncells  622853 33.3    1335662 71.4  1335662 71.4
+Vcells 1246704  9.6    8388608 64.0  8388466 64.0
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># remove vector and check memory a final time; Vcells used (MB) returns to</span><span class="w">
@@ -719,8 +721,8 @@ Vcells 1240837  9.5    8388608 64.0  8388562 64.0
 </span></code></pre></div></div>
 
 <div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          used (Mb) gc trigger (Mb) max used (Mb)
-Ncells  619392 33.1    1324998 70.8  1324998 70.8
-Vcells 1140674  8.8    8388608 64.0  8388562 64.0
+Ncells  622840 33.3    1335662 71.4  1335662 71.4
+Vcells 1146762  8.8    8388608 64.0  8388466 64.0
 </code></pre></div></div>
 
 <p> </p>
@@ -787,7 +789,7 @@ Vcells 1140674  8.8    8388608 64.0  8388562 64.0
 <div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>package 'pwr' successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-	C:\Users\sutph\AppData\Local\Temp\RtmpwjFJOc\downloaded_packages
+	C:\Users\sutph\AppData\Local\Temp\Rtmpsdrd2C\downloaded_packages
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load required packages into memory</span><span class="w">

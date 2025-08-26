@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2024-11-08 15:54:16 -0700">
+    <meta http-equiv="last-modified" content="2025-08-25 22:23:53 -0700">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -248,7 +248,7 @@
 
   <div class="row">
     <div class="col-md-3">
-      <strong>Class Date:</strong> 8/29/2024 -- On Your Own
+      <strong>Class Date:</strong> 8/28/2025 -- On Your Own
       <br/>
       <strong>Teaching:</strong> 90 min
       <br/>
@@ -426,13 +426,13 @@
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">c3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">+</span><span class="n">i</span><span class="w"> </span><span class="c1"># incorrect</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error in eval(expr, envir, enclos): object 'i' not found
+<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: object 'i' not found
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">c3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1+1</span><span class="o">*</span><span class="n">i</span><span class="w"> </span><span class="c1"># incorrect</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error in eval(expr, envir, enclos): object 'i' not found
+<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: object 'i' not found
 </code></pre></div></div>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">c3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1+1i</span><span class="w"> </span><span class="c1"># correct</span><span class="w">
@@ -511,7 +511,7 @@
 </span><span class="n">num1.as.char</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">4</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error in eval(expr, envir, enclos): object 'num1.as.char' not found
+<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: object 'num1.as.char' not found
 </code></pre></div></div>
 
 <p> </p>
@@ -548,7 +548,7 @@
 
 <p>Note that when one of the <code class="language-plaintext highlighter-rouge">as.</code> functions throws an error, it doesn’t simply fail to return a variable. Instead it throws an warning message and assigns an <code class="language-plaintext highlighter-rouge">NA</code> value to the variable. <code class="language-plaintext highlighter-rouge">NA</code> is one of several special values that represents missing data, or “Not Available”. We will discuss these special characters in more detail later in this lesson.</p>
 
-<p>Sometimes these functions can have unintended consequences. When we apply the <code class="language-plaintext highlighter-rouge">as.integer()</code> function to a numeric, it automatically rounds decimal number “down” (i.e. “toward 0”) to the nearest integer:</p>
+<p>Sometimes these functions can have unintended consequences. When we apply the <code class="language-plaintext highlighter-rouge">as.integer()</code> function to a numeric, it automatically rounds decimal number “down” (i.e., “toward 0”) to the nearest integer:</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">as.integer</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
@@ -757,7 +757,7 @@ Levels: female male
 
 <p>Note that the order in which the <em>levels</em> appear defines which level corresponds to which integer number.</p>
 
-<p>The major functional difference between <strong>character</strong> and <strong>factor</strong> objects is that the elements of the <strong>character</strong> vector only have the inherent order defined by their values (e.g. alphabetical). Sometimes, the order of the <strong>factor</strong> elements does not matter; other times you might want to specify the order because it is meaningful. For instance, <code class="language-plaintext highlighter-rouge">"low"</code>, <code class="language-plaintext highlighter-rouge">"medium"</code>, <code class="language-plaintext highlighter-rouge">"high"</code> as elements of a character vector have the implicit alphabetical order:</p>
+<p>The major functional difference between <strong>character</strong> and <strong>factor</strong> objects is that the elements of the <strong>character</strong> vector only have the inherent order defined by their values (e.g., alphabetical). Sometimes, the order of the <strong>factor</strong> elements does not matter; other times you might want to specify the order because it is meaningful. For instance, <code class="language-plaintext highlighter-rouge">"low"</code>, <code class="language-plaintext highlighter-rouge">"medium"</code>, <code class="language-plaintext highlighter-rouge">"high"</code> as elements of a character vector have the implicit alphabetical order:</p>
 
 <p>      <code class="language-plaintext highlighter-rouge">"high"</code> &lt; <code class="language-plaintext highlighter-rouge">"low"</code> &lt; <code class="language-plaintext highlighter-rouge">"medium"</code></p>
 
@@ -1262,7 +1262,7 @@ Levels: low &lt; medium &lt; high &lt; very high
 
   <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">exercise</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"l"</span><span class="p">,</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">,</span><span class="w"> </span><span class="s2">"l"</span><span class="p">)</span><span class="w"> </span><span class="c1"># (a)</span><span class="w">
 </span><span class="n">exercise</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s2">"l"</span><span class="p">,</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">,</span><span class="w"> </span><span class="s2">"l"</span><span class="p">),</span><span class="w"> </span><span class="n">ordered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w"> </span><span class="c1"># (b)</span><span class="w">
-</span><span class="n">exercise</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="o">-</span><span class="n">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s2">"l"</span><span class="p">,</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">,</span><span class="w"> </span><span class="s2">"l"</span><span class="p">),</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"l"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">),</span><span class="w"> </span><span class="n">ordered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> </span><span class="c1"># (c)</span><span class="w">
+</span><span class="n">exercise</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s2">"l"</span><span class="p">,</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">,</span><span class="w"> </span><span class="s2">"l"</span><span class="p">),</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"l"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">),</span><span class="w"> </span><span class="n">ordered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> </span><span class="c1"># (c)</span><span class="w">
 </span><span class="n">exercise</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s2">"l"</span><span class="p">,</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">,</span><span class="w"> </span><span class="s2">"l"</span><span class="p">),</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"n"</span><span class="p">,</span><span class="w"> </span><span class="s2">"l"</span><span class="p">,</span><span class="w"> </span><span class="s2">"i"</span><span class="p">),</span><span class="w"> </span><span class="n">ordered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w"> </span><span class="c1"># (d)</span><span class="w">
 </span></code></pre></div>  </div>
 

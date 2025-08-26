@@ -1,6 +1,6 @@
 ---
 title: "Distributions and Normality -- Additional Detail"
-classdate: "9/19/2024 -- On Your Own"
+classdate: "9/18/2025 -- On Your Own"
 teaching: 90
 exercises: 30
 questions:
@@ -222,7 +222,7 @@ The best reversible transformation is not always immediately obvious. You can ju
 > > qqnorm(sqrt(aj$bw_gain/aj$bw_start))
 > > qqline(sqrt(aj$bw_gain/aj$bw_start))
 > >  shapiro.test(sqrt(aj$bw_gain/aj$bw_start))
-> >```
+> > ```
 > >
 > > &nbsp;
 > >

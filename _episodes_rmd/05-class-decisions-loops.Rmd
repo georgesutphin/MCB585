@@ -1,6 +1,6 @@
 ---
 title: "Decision Making and Loops"
-classdate: "9/17/2024 -- In Class"
+classdate: "9/16/2025 -- In Class"
 teaching: 90
 exercises: 30
 questions:
@@ -153,7 +153,7 @@ head(carSpeeds)
 >
 > For instance, your function should have the following behavior when presented with subsets of the data from the `inflammation-01.csv` data set:
 >
->```{r, fig.cap="", echo=-1}
+> ```{r, fig.cap="", echo=-1}
 > plot_dist <- function(x, threshold) {
 >    if (length(x) > threshold) {
 >        boxplot(x)

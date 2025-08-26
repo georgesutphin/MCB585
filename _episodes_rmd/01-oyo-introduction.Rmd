@@ -1,6 +1,6 @@
 ---
 title: "Getting started with R and RStudio -- Additional Detail"
-classdate: "8/27/2024 -- On Your Own"
+classdate: "8/26/2025 -- On Your Own"
 teaching: 90
 exercises: 30
 questions:
@@ -150,7 +150,7 @@ In addition to adding comments to describe individual actions, adding a detailed
 
 Actually, even this is a bit vague. 
 * Which science paper? Can you provide a link or Pubmed ID?
-* Which analysis in that paper?
+* Which analyses in that paper?
 * What is the purpose of the analysis?
 * Which figure(s) are being reproduced?
 
@@ -225,7 +225,7 @@ This is often confusing to R newcomers who have programmed in languages where `.
 2. Separate words in variable names with underscores
 3. Use only lowercase letters, underscores, and numbers in variable names. 
 
-The book *R Packages* includes a [chapter](http://r-pkgs.had.co.nz/style.html) on this and other style considerations.
+The book *R Packages* includes a [chapter](http://r-pkgs.org/) on this and other style considerations.
 
 How closely you follow these standards is up to you. As a good rule of thumb, choose a convention for naming R objects that is descriptive, that you can remember, and that you will stick to using.
 
@@ -235,7 +235,7 @@ How closely you follow these standards is up to you. As a good rule of thumb, ch
 It's easy to annotate and mark your code using `#` or `#-` to set off sections of your code and to make finding specific parts of your code easier. For example, it's often helpful when writing code to separate the function definitions. If you create only one or a few custom functions in your script, put them toward the top of your code. If you have written many functions, put them all in their own .R file and then `source` those files. `source` will define all of these functions so that your code can make use of them as needed. 
 
 ```{r source_ex, eval=FALSE}
-source("my_genius_fxns.R")
+source("my_genius_fxns.R") # not intended to be run
 ```
 
 &nbsp;
@@ -248,6 +248,8 @@ source("my_genius_fxns.R")
 3. Keep all of your source files for a project in the same directory, then use relative paths as necessary to access them. For example, to load data use:
 
 ```{r relpath, eval=FALSE}
+## Sample -- not intended to be run
+
 # set working directory
 setwd("C:/Users/Karthik/Documents/sannic-project")
 

@@ -1,6 +1,6 @@
 ---
 title: "Survival Analysis"
-classdate: "9/26/2024 -- In Class"
+classdate: "9/25/2025 -- In Class"
 teaching: 90
 exercises: 30
 questions:

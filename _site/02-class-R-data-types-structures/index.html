@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2024-11-08 15:54:16 -0700">
+    <meta http-equiv="last-modified" content="2025-08-25 22:23:53 -0700">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -248,7 +248,7 @@
 
   <div class="row">
     <div class="col-md-3">
-      <strong>Class Date:</strong> 8/29/2024 -- In Class
+      <strong>Class Date:</strong> 8/28/2025 -- In Class
       <br/>
       <strong>Teaching:</strong> 90 min
       <br/>
@@ -341,12 +341,12 @@
 
 <p> </p>
 
-<p>The major exception is the backslash (<code class="language-plaintext highlighter-rouge">\</code>), which R uses as an escape character. In computing, an escape character is a <em>metacharacter</em> that is not interpreted literally, but instead causes the computer to interpret <em>the character following the escape character</em> in a different way.</p>
+<p>The major exception is the backslash (<code class="language-plaintext highlighter-rouge">\</code>), which R uses as an escape character. In computing, an escape character is a <em>meta-character</em> that is not interpreted literally, but instead causes the computer to interpret <em>the character following the escape character</em> in a different way.</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">escape</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"This string \does not compute."</span><span class="w">
 </span></code></pre></div></div>
 
-<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: '\d' is an unrecognized escape in character string (&lt;text&gt;:1:25)
+<div class="language-plaintext error highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Error: '\d' is an unrecognized escape in character string (&lt;input&gt;:1:25)
 </code></pre></div></div>
 
 <p> </p>
@@ -429,6 +429,12 @@ Line 2
 </span></code></pre></div></div>
 
 <div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1] "I love dogs!"
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cat.person</span><span class="w"> </span><span class="c1"># note that cat.person is unchanged</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext output highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1] "I love cats!"
 </code></pre></div></div>
 
 <p> </p>
@@ -1074,7 +1080,7 @@ what output it produces.</p>
 <hr />
 <h3 id="matrices">Matrices</h3>
 
-<p>In R, matrices are an extension of vectors. They are not a separate type of object but simply an atomic vector with an attribute called “dimensions”, i.e. a specified number of rows and columns. As with vectors, the elements of a matrix must be of the same data type. We can use the generic <code class="language-plaintext highlighter-rouge">matrix()</code> function to build a matrix. Unlike vectors, there is no direct equivalent for each data type (e.g. <code class="language-plaintext highlighter-rouge">character()</code>). However, because matrices are really just vectors, we can use a predefined vector to build a matrix:</p>
+<p>In R, matrices are an extension of vectors. They are not a separate type of object but simply an atomic vector with an attribute called “dimensions”, i.e. a specified number of rows and columns. As with vectors, the elements of a matrix must be of the same data type. We can use the generic <code class="language-plaintext highlighter-rouge">matrix()</code> function to build a matrix. Unlike vectors, there is no direct equivalent for each data type (e.g., <code class="language-plaintext highlighter-rouge">character()</code>). However, because matrices are really just vectors, we can use a predefined vector to build a matrix:</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># first create a vector, then coerce that vector into a matrix:</span><span class="w">
 </span><span class="n">v</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">4</span><span class="w">

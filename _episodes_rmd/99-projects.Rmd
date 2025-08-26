@@ -19,25 +19,95 @@ knitr_fig_path("99-projects-")
 
 ## Final project details
 
-MCB585 will culminate in the completion of individual final projects for each student. The goal of these projects is to apply the skills learned in this course to a novel large dataset to evaluate a hypothesis, design an experiment, or explore the behavior of a system.
+### Overview & Goals
+
+The final project is the capstone experience for MCB 585. It serves as an opportunity to synthesize and apply the quantitative and computational skills learned throughout the course to a novel, large dataset. The core objective is to use these skills to formally evaluate a hypothesis, design a quantitative experiment, or explore the behavior of a complex biological system. 
+We strongly encourage you to use data from your own research, as a key goal of this course is to provide you with practical tools for your graduate work. However, several alternatives are available if you do not have a suitable dataset. 
+The project is composed of three parts: (1) a proposal, (2) a final written report with code, and (3) an oral presentation. Together, these components account for 35% of your final MCB 585 grade.
+
+### Due Dates & Submission Instructures
 
 Each project will consist of three parts:
 
-1. **Proposal (due 11/7/2023).** Each student should submit a written proposal (~1/2 page) that outlines the following:
- + The question being addressed. 
- + o	The dataset(s) to be used, with descriptive details (e.g. number of samples, variables of interest, potential confounding variables). If an unpublished dataset is being used, the data should be included with the proposal. For large datasets (e.g. outputs from high-throughput systems, genomic data) please provide one example input file in fastq, counts (or another appropriate format) through Box, Microsoft OneDrive, Dropbox, or Google Drive. For large microscopy datasets, a sample image should be provided.
- + The proposed analysis plan, including which tools/skills from the MCB585 coursework will be employed.
- + A description of potential pitfalls that may be encountered and alternative approaches.
- 
-| *Note: The main purpose of the proposal is to allow the instructors to judge the scope of the project and provide feedback prior to the students beginning analysis. In some cases, instructors may request a brief meeting to clarify details or suggest alternative approaches.*
+The three parts of the final Project are due as follows:
+* **Part 1: Project Proposal.** Due Tuesday 11/4/2025
+* **Part 2: Written Report with Code.** Due Tuesday 12/2/2025
+* **Part 3: Oral Presentation.** Delivered during class on 12/4/2025, 12/9/2025, and 12/11/2025 (a signup sheet will be available toward the end of November).
 
-2. **Report and code (due 12/3/2024).** A brief (1-2 pages of text plus figures) report describing the findings of the project should be turned in once analysis is complete. The report should include, as a separate attachment in addition to the report, a well-documented R or MATLAB script or scripts that can be run to reproduce the analysis presented.
+**Submission.** Project proposals and written reports should be submitted to the corresponding D2L Assignment drop box. The oral presentation just needs to be delivered on your assigned day but does not need to be turned in separately.
 
-3. **Presentations (12/3/2024, 12/5/2024, 12/10/2024).** During the last 3 days of class, each student will give a 10-15 minute presentation describing:
- + The biological question that they chose to explore.
- + The computational approach that they used in their analysis.
- + What they discovered.
- + Any problems that they encountered along the way, and how they addressed the problems.
+## Part 1: Project Proposal
+
+The purpose of the proposal is to ensure your project has an appropriate scope and to allow instructors to provide early feedback. In some cases, instructors may request a brief meeting to clarify details or suggest alternative approaches. 
+* Value: 5% of final grade
+* Length: ~1 page 
+* Due Date: 11/4/2025
+
+Your proposal must outline the following:
+* Biological Question or Analysis Goal: Clearly state the specific question or hypothesis you intend to address. 
+*	Dataset Description: Identify the dataset(s) you will use. Provide descriptive details, including: 
+  * The source of the data (e.g., your own research, public repository, published paper)
+  * The number of samples in the dataset (datasets should preferably contain at least 1,000)
+  * The primary variable or variables of interest
+  * Any potential confounding variables. 
+  * Data Submission: If you plan to use an unpublished dataset, it must be included with your proposal. For large datasets (e.g., high-throughput sequencing, genomics), provide a single example input file (e.g., FASTQ, counts file, sample image). 
+  * **Note:** Please ask for approval in advance if your chosen dataset does not meet these criterion. We do make exceptions if the project is a good fit for the course material.
+* Proposed Analysis Plan: Describe the analytical approach you plan to take. Specify which tools and skills from the MCB 585 coursework you will use. Projects must use at least one, and preferably multiple, tools from the course.
+* Potential Pitfalls: Briefly describe potential challenges you might encounter (e.g., technical issues, unexpected data structure) and propose alternative approaches you could take.
+
+## Part 2: Written Report & Code
+
+You will submit a written report of your findings, accompanied by the code used to perform the analysis.
+* **Value:** 15% of final grade
+* **Length:** 1-2 pages of single-spaced text, plus figures and tables
+* **Due Date:** Tuesday 12/2/2025
+
+The report should be structured like a brief scientific paper with the following sections:
+* **Introduction:** Provide background on the biological question and state the specific goals of your project.
+* **Dataset Description:** Briefly describe your selected dataset, including number of samples, primary variables of interest, and confounding variables. 
+*	**Methods:** 
+  * Describe your analysis in sufficient detail that it could be replicated independently.
+  * If you use web tools or other pre-existing pipelines, you must demonstrate your understanding of the underlying algorithm(s). 
+  * Your final report must describe all tools used, including a precise description of how generative AI was employed (if applicable).
+* **Results:** Present your findings in text, supported by figures and tables, as needed.
+*	**Discussion & Challenges:** Interpret your results. Discuss any technical problems you encountered and explain how you addressed them. 
+* **Code Submission:** You must submit a well-documented R or MATLAB script, or a Cell Profiler workflow, that we can use to reproduce your analysis.  "Well-documented" means your code includes descriptive comments and clear variable names that make clear the purpose of each step.
+  * If you use tools other than R or MATLAB for more than half of your analysis, you must receive instructor permission. 
+  * Your code must be submitted for review prior to your final presentation.
+
+## Part 3: Oral Presentation
+
+During the last few class meetings, each student will deliver a presentation on their project.
+* **Value:** 15% of final grade
+* **Length:** Plan to give your presentation with the 15-minute slot, structured as a 10-12 minute talk followed by 3-5 minutes for questions and discussion
+* **Date:** 12/4/2025, 12/9/2025, and 12/11/2025 (a signup sheet will be available toward the end of November)
+
+Your presentation should describe:
+* **Biological Question:** The background and motivation for your project, and the specific goal of your analysis.
+* **Dataset Description:** Briefly describe your selected dataset, including number of samples, primary variables of interest, and confounding variables.
+* **Computational Approach:** Describe the computational tools that you employed to address the question of interest.
+* **Results:** What you discovered through your analysis. 
+* **Discussion & Challenges:** Any problems you encountered and how you addressed them.
+
+## Additional Information
+
+**Choosing a Project Topic:** You have several options for your project.
+* **Use Your Data (Strongly Encouraged!):** Apply the tools from the course to learn something new about a dataset from your own thesis research. 
+* **Reproduce a Published Finding:** Select a paper with an interesting analysis and reproduce one of its figures using either data provided with the paper or a similar dataset. 
+* **Public or Course Dataset:** Analyze a publicly available dataset from an online resource or one of the datasets provided in the course. If you choose a course dataset, you must conduct an analysis the extends beyond what we did in class (or applies an analysis in class to a different dataset than the one used). 
+
+**Example Project Ideas: Here are a few sample projects.** You are free to use or adapt these examples if you are unable to find a suitable project on your own. 
+* **Lifespan Power Charts for Inbred Mice:** Using the inbred mouse lifespan dataset, construct power charts to serve as a reference for aging studies. Compare the t-test and simulation methods for determining sample size, and account for variability between male and female mice. Use your power charts to compare experimental design parameters between different inbred strains. 
+* **Reexamine the Impact of Observation Frequency on Lifespan Analysis:** A 2017 Petrascheck & Miller paper (DOI: 10.3389/fgene.2017.00092) used a Gompertz distribution to model C. elegans lifespan observations. Reproduce their analysis using the "CHARGE.screen.lifespan.data.txt" dataset provided in the course materials. Use the Weibull distribution method presented in class in place of the Gompertz distribution. 
+* **Demonstrate the Prediction of the Central Limit Theorem:** The Central Limit Theorem predicts that a sampling distribution will be approximately normal for large samples, regardless of the population distribution's shape. Using simulated population distributions of various shapes (e.g., skewed, multi-modal), explore the relationship between sample size and the normality of the sampling distribution. Demonstrate that the Central Limit Theorem is accurate and estimate the sample size needed for each selected distribution shape to become irrelevant. Compare this sample size between distributions.
+* **Identifying Molecular Subtypes of Breast Cancer:** Using a TCGA breast cancer dataset, normalize the data, select for the most variable genes, and perform hierarchical, k-means, and model-based clustering. Compare your resulting clusters to established subtypes (e.g., ER/PR/HER2 status or PAM50) and use survival analysis to identify differences in prognosis between the identified subtypes.
+
+**Use of Generative AI (e.g., ChatGPT, Gemini, Claude):**
+* **Permitted Use:** You may use generative AI tools to assist with coding and debugging for your project. 
+* **Prohibited Use:** You should not use AI tools to fully generate your code, generate the final written answers, or write the narrative for your report. The writing and scientific interpretation must be your own. 
+* **Responsibility:** You are responsible for fact-checking and critically examining any output that you receive from an AI tool. These tools can produce code that is flawed or information that is biased or incorrect. This is particularly true for specialized analyses like power and survival analyses, were current models have a tendency to try “reinvent the wheel” and derive analysis tools from scratch (and do so poorly).
+* **Citation Requirement:** If you use generative AI, you must include an acknowledgement in your final report that describes precisely how these tools were employed. Please follow MLA guidelines for citing generative AI. 
+
 
 > ## Project notes
 > 
@@ -51,9 +121,8 @@ Each project will consist of three parts:
 > 
 > 3. Projects that utilize webtools or other analysis pipelines are allowed; however, 
 > at least half of the analysis should be performed as original code created by the 
-> student in R or MATLAB, and a full understanding of the algorithms underlying the 
-> webtools should be demonstrated in the writeup and presentation. For image analysis, 
-> a cell profiler pipeline can be used without having to write the code in MATLAB.
+> student using tools covered in class, and a full understanding of the algorithms underlying the 
+> webtools should be demonstrated in the writeup and presentation. 
 > 
 > 4. The goal of this course is to provide you with a set of practical tools that can
 > be employed in your own research. As such, we strongly encourage you to use your own
@@ -65,28 +134,10 @@ Each project will consist of three parts:
 > [here]({{ page.root }}/data/MCB585-sample-data.zip)). There are also many online
 > resources with publically available datasets that you can use for your project. For 
 > example:
->    + [Vanderbilt University Department of BiostatisticsDatasets](http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets)
->    + [D. John Rasp's Datasets for Classroom Use](https://www2.stetson.edu/~jrasp/data.htm)
+>    + [Vanderbilt University Department of BiostatisticsDatasets](https://hbiostat.org/data/)
 >    + [Berkeley Library Health Statistics & Data Datasets](https://guides.lib.berkeley.edu/publichealth/healthstatistics/rawdata)
->    + [Stanford Statweb Public Data Repositories](http://statweb.stanford.edu/~sabatti/data.html)
+>    + [Stanford Statweb Public Data Repositories](https://chiarasabatti.su.domains/data.html)
 >    + [LINCS Data Portal Datasets](http://lincsportal.ccs.miami.edu/datasets/)
 {: .callout}
-
-***
-### Examples
-
-Here are a few examples projects. Feel free to use one of these or some modifed version of these if you are having trouble coming up with a project of you own.
-
-1. **Inbred mouse power charts.** Using the inbred mouse lifespan data, construct a series of power charts to use as a reference for mouse aging studies. Consider potential confounding factors, and compare the t-test method to the simulation method for determining sample size. Be sure to account for differences in variability between male and female mice.
-
-2. **Re-examination of observation frequency in lifespan analysis.** In 2017, the Dana Miller (University of Washington) and Michael Petrascheck (Scripps Research Institute) published a joint paper examining how several technical aspects of experimental design affect reproducibility ([Petrascheck & Miller, 2017](https://www.ncbi.nlm.nih.gov/pubmed/28713422)). They used a large set of wild-type *C. elegans* lifespan observations modeled using a Gompertz distribution. Reproduce this analysis using a novel dataset ("CHARGE.screen.lifespan.data.txt" in [MCB585-sample-data.zip]({{ page.root }}/data/MCB585-sample-data.zip), updated 10/21/2019) modeled using a Weibull distribution.
-
-3. **Demonstrate the predictions of the Central Limit Theorem.** We have repeatedly discussed the prediction of the Central Limit Theorem that, regardless of the shape of the population distribution, the sampling distribution for a phenotype will be approximately normal for large samples. Using a variety of simulated population distributions with different shapes (e.g. highly skewed, multi-modal), explore the relationship between sample size and normality of the sampling distribution. For the set of distributions provided by default in R, see `?distributions`. Others are available through add-on packages. 
-
-4. **Identifying molecular subtypes of breast cancer.** Normalize TCGA breast cancer data from cBioPortal, select the most variable genes, and perform hierarchical, k-means, and model-based clustering on the tumors. Compare and contrast your clusters with subtyping based on presence of ER, PR, and HER2 markers, or based on the PAM50 signature. Use survival analysis to identify differences in prognosis between the subtypes.
-
-&nbsp;
-
-***
 
 {% include links.md %}

@@ -1,6 +1,6 @@
 ---
 title: "Advanced Survival Analysis"
-classdate: "9/26/2024 -- On Your Own"
+classdate: "9/25/2025 -- On Your Own"
 teaching: 90
 exercises: 30
 questions:

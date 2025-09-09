@@ -1,6 +1,6 @@
 ---
 title: "R Data Types -- In-Depth"
-classdate: "8/29/2024 -- On Your Own"
+classdate: "8/28/2025 -- On Your Own"
 teaching: 90
 exercises: 30
 questions:
@@ -170,7 +170,7 @@ as.numeric("forty-four")
 
 Note that when one of the `as.` functions throws an error, it doesn't simply fail to return a variable. Instead it throws an warning message and assigns an `NA` value to the variable. `NA` is one of several special values that represents missing data, or "Not Available". We will discuss these special characters in more detail later in this lesson.
 
-Sometimes these functions can have unintended consequences. When we apply the `as.integer()` function to a numeric, it automatically rounds decimal number "down" (i.e. "toward 0") to the nearest integer:
+Sometimes these functions can have unintended consequences. When we apply the `as.integer()` function to a numeric, it automatically rounds decimal number "down" (i.e., "toward 0") to the nearest integer:
 
 ```{r}
 as.integer(1)
@@ -269,7 +269,7 @@ str(sex)
 
 Note that the order in which the *levels* appear defines which level corresponds to which integer number. 
 
-The major functional difference between **character** and **factor** objects is that the elements of the **character** vector only have the inherent order defined by their values (e.g. alphabetical). Sometimes, the order of the **factor** elements does not matter; other times you might want to specify the order because it is meaningful. For instance, `"low"`, `"medium"`, `"high"` as elements of a character vector have the implicit alphabetical order:
+The major functional difference between **character** and **factor** objects is that the elements of the **character** vector only have the inherent order defined by their values (e.g., alphabetical). Sometimes, the order of the **factor** elements does not matter; other times you might want to specify the order because it is meaningful. For instance, `"low"`, `"medium"`, `"high"` as elements of a character vector have the implicit alphabetical order:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"high"` < `"low"` < `"medium"`
 
@@ -527,7 +527,7 @@ head(z) # returns the first 6 elements of an object
 > ```{r, eval=FALSE}
 > exercise <- c("l", "n", "n", "i", "l") # (a)
 > exercise <- factor(c("l", "n", "n", "i", "l"), ordered = TRUE) # (b)
-> exercise < -factor(c("l", "n", "n", "i", "l"), levels = c("n", "l", "i"), ordered = FALSE) # (c)
+> exercise <- factor(c("l", "n", "n", "i", "l"), levels = c("n", "l", "i"), ordered = FALSE) # (c)
 > exercise <- factor(c("l", "n", "n", "i", "l"), levels = c("n", "l", "i"), ordered = TRUE) # (d)
 > ```
 >

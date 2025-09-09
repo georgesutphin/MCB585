@@ -1,6 +1,6 @@
 ---
 title: "Basic Data Types and Data Structures in R"
-classdate: "8/29/2024 -- In Class"
+classdate: "8/28/2025 -- In Class"
 teaching: 90
 exercises: 30
 questions:
@@ -61,7 +61,7 @@ equation <- "1 + 3 - 2 = 2"
 
 &nbsp;
 
-The major exception is the backslash (`\`), which R uses as an escape character. In computing, an escape character is a *metacharacter* that is not interpreted literally, but instead causes the computer to interpret *the character following the escape character* in a different way.
+The major exception is the backslash (`\`), which R uses as an escape character. In computing, an escape character is a *meta-character* that is not interpreted literally, but instead causes the computer to interpret *the character following the escape character* in a different way.
 
 ```{r}
 escape <- "This string \does not compute."
@@ -119,6 +119,7 @@ cat.person <- "I love cats!"
 cat.person
 dog.person <- sub("cats", "dogs", cat.person)
 dog.person
+cat.person # note that cat.person is unchanged
 ```
 
 &nbsp;
@@ -556,7 +557,7 @@ We will periodically use object attributes to manipulate objects throughout the 
 ***
 ### Matrices
 
-In R, matrices are an extension of vectors. They are not a separate type of object but simply an atomic vector with an attribute called "dimensions", i.e. a specified number of rows and columns. As with vectors, the elements of a matrix must be of the same data type. We can use the generic `matrix()` function to build a matrix. Unlike vectors, there is no direct equivalent for each data type (e.g. `character()`). However, because matrices are really just vectors, we can use a predefined vector to build a matrix:
+In R, matrices are an extension of vectors. They are not a separate type of object but simply an atomic vector with an attribute called "dimensions", i.e. a specified number of rows and columns. As with vectors, the elements of a matrix must be of the same data type. We can use the generic `matrix()` function to build a matrix. Unlike vectors, there is no direct equivalent for each data type (e.g., `character()`). However, because matrices are really just vectors, we can use a predefined vector to build a matrix:
 
 ```{r}
 # first create a vector, then coerce that vector into a matrix:

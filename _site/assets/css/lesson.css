@@ -135,7 +135,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
-  background: linear-gradient(to bottom, #f4fd9c, #f5fda6);
+  background: linear-gradient(to bottom, #f4fd9c, rgb(245.1, 253.2, 165.9));
   border-color: #f4fd9c;
   margin-top: 0px;
   margin-left: -5px;
@@ -161,7 +161,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
-  background: linear-gradient(to bottom, #eec275, #f0c883);
+  background: linear-gradient(to bottom, #eec275, rgb(239.7, 200.1, 130.8));
   border-color: #eec275;
   margin-top: 0px;
   margin-left: -5px;
@@ -187,7 +187,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
-  background: linear-gradient(to bottom, #dfd2a0, #e2d7aa);
+  background: linear-gradient(to bottom, #dfd2a0, rgb(226.2, 214.5, 169.5));
   border-color: #dfd2a0;
   margin-top: 0px;
   margin-left: -5px;
@@ -213,7 +213,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
-  background: linear-gradient(to bottom, #eec275, #f0c883);
+  background: linear-gradient(to bottom, #eec275, rgb(239.7, 200.1, 130.8));
   border-color: #eec275;
   margin-top: 0px;
   margin-left: -5px;
@@ -239,7 +239,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
-  background: linear-gradient(to bottom, #7ae78e, #87e999);
+  background: linear-gradient(to bottom, #7ae78e, rgb(135.3, 233.4, 153.3));
   border-color: #7ae78e;
   margin-top: 0px;
   margin-left: -5px;
@@ -265,7 +265,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
-  background: linear-gradient(to bottom, #daee84, #def090);
+  background: linear-gradient(to bottom, #daee84, rgb(221.7, 239.7, 144.3));
   border-color: #daee84;
   margin-top: 0px;
   margin-left: -5px;
@@ -291,7 +291,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
-  background: linear-gradient(to bottom, #9cd6dc, #a6dae0);
+  background: linear-gradient(to bottom, #9cd6dc, rgb(165.9, 218.1, 223.5));
   border-color: #9cd6dc;
   margin-top: 0px;
   margin-left: -5px;
@@ -317,7 +317,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
-  background: linear-gradient(to bottom, #ded4b9, #e1d8c0);
+  background: linear-gradient(to bottom, #ded4b9, rgb(225.3, 216.3, 192));
   border-color: #ded4b9;
   margin-top: 0px;
   margin-left: -5px;
@@ -343,7 +343,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
-  background: linear-gradient(to bottom, #fc8dc1, #fc98c7);
+  background: linear-gradient(to bottom, #fc8dc1, rgb(252.3, 152.4, 199.2));
   border-color: #fc8dc1;
   margin-top: 0px;
   margin-left: -5px;

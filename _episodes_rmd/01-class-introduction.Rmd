@@ -1,6 +1,6 @@
 ---
 title: "Getting started with R and RStudio"
-classdate: "8/27/2024 --  In Class"
+classdate: "8/26/2025 -- In Class"
 teaching: 90
 exercises: 30
 questions:
@@ -64,7 +64,7 @@ RStudio is an integrated development environment (IDE) for R. It basically provi
 
 To participate in both in-class exercises and homework, you will need access to a computer with the current versions of the following installed:
 
-1. [R software](https://cran.r-project.org/mirrors.html)
+1. [R software](https://cran.r-project.org/)
 2. [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/#download)
 
 You also need to download some files to follow along with the lessons in class:
@@ -417,6 +417,7 @@ log(x = 100, base = 10)
 # note that in this case the order does not matter:
 log(base = 10, x = 100)
 ```
+
 &nbsp;
 
 In this case, we told `log()` exactly which values were assigned to `x` and `base`, so the order was unimportant. Here is another option:
@@ -492,7 +493,7 @@ setwd("/Users/<username>/Desktop") # MacOS
 **Caution for Windows users:** If you copy a file path from Windows Explorer and paste it into `setwd()`, you have to change the backslashes ("\\") used in Windows to forwardslashes ("/"). R interprets "\\" as a special type of character called an *escape character* rather than a part of the string. If you don't replace them, you will get an error:
 
 ```{r}
-setwd(".\data")
+setwd("./data")
 ```
 
 &nbsp;
@@ -565,7 +566,7 @@ Become adept at using online search engines to locate solutions. I usually start
 &nbsp;
 > ## Getting R help online
 >
-> Use an online search engine (e.g. Google) to find a function that let's you read data from a text file into R.
+> Use an online search engine (e.g., Google) to find a function that let's you read data from a text file into R.
 >
 > > ## Solution
 > > 
@@ -585,6 +586,11 @@ Become adept at using online search engines to locate solutions. I usually start
 > > sites give you the most consistently useful answers.
 > {: .solution}
 {: .challenge}
+
+&nbsp;
+#### Generative AI is your friend
+
+While you don't want to use AI to write the code for you (the goal here is to learn how to do that yourself and current-generation generative AI is still not great at specialized analysis), it is quite good at general coding. It can be a great resource to help troubleshoot your code and answer your questions. Use it as a learning aid or a tutor to get fast answers on why your code isn't working or to figure out the right function to use for a specific task.
 
 ***
 

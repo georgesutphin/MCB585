@@ -1,6 +1,6 @@
 ---
 title: "Data Frames, Basic Indexing, Reading/Writing Data"
-classdate: "9/3/2024 -- In Class"
+classdate: "9/4/2025 -- In Class"
 teaching: 90
 exercises: 30
 questions:
@@ -129,7 +129,7 @@ There are many ways to interact with **data frames** and get information about t
 >
 > * `head()` - shows first 6 rows
 > * `tail()` - shows last 6 rows
-> * `dim()` - returns the dimensions of data frame (i.e. number of rows and number of columns)
+> * `dim()` - returns the dimensions of data frame (i.e., number of rows and number of columns)
 > * `nrow()` - number of rows
 > * `ncol()` - number of columns
 > * `str()` - structure of data frame - name, type and preview of data in each column
@@ -345,7 +345,7 @@ setosa <- iris[iris$Species == "setosa",]
 &nbsp;
 > ## Subsetting sepal length
 >
-> Use the `>` operator to create a new data frame that is the subset of `iris` with sepal length greater than 5.0 for the species.
+> Use the `>` operator to create a new data frame that is the subset of `iris` with sepal length greater than 5.0.
 > 
 > > ## Solution
 > > ```{r}

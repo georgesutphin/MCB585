@@ -374,7 +374,7 @@ NULL
 
 
 ~~~
-# While this contaims a matrix (rather than a vector)
+# While this contains a matrix (rather than a vector)
 avg_aneurisms_summary$Aneurisms_avg
 ~~~
 {: .language-r}

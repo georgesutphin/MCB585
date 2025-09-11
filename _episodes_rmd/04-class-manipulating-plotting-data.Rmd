@@ -50,7 +50,7 @@ The standard R installation provides many functions for calculating basic statis
 > * `var()` - variance
 > * `sd()` - standard deviation
 > * `mad()` - median absolute deviation
-> *Note: there is no built-in function for calculating standard error of mean (SEM), but this can be easily calculated using `sd(x)/sqrt(length(x))`. There are also packages that have functions available (e.g. `pastecs`).*
+> *Note: there is no built-in function for calculating standard error of mean (SEM), but this can be easily calculated using `sd(x)/sqrt(length(x))`. There are also packages that have functions available (e.g., `pastecs`).*
 >
 > Miscellaneous:
 > * `summary()` - summary statistics based on data type
@@ -59,7 +59,7 @@ The standard R installation provides many functions for calculating basic statis
 
 &nbsp;
 
-Let's start by performing some common mathematical operations to learn more about our data.We will load a fresh copy of our sample data to reset any unintended changes from previous lessons and be sure that we include `header=TRUE` and `stringsAsFactors=FALSE` arguments.
+Let's start by performing some common mathematical operations to learn more about our data. We will load a fresh copy of our sample data to reset any unintended changes from previous lessons and be sure that we include `header=TRUE` and `stringsAsFactors=FALSE` arguments.
 
 ```{r}
 dat <- read.csv(file="data/sample.csv", header=TRUE, stringsAsFactors=FALSE)
@@ -193,7 +193,7 @@ table(dat$Group, dat$Gender)
 
 &nbsp;
 
-In many instances, we will want to break data down by groups (e.g. treatment groups) and calculate statistics on each sub group. Functions like `apply()` and `aggregate()` are designed for this purpose, and you will be looking at how to use these *On Your Own*.
+In many instances, we will want to break data down by groups (e.g., treatment groups) and calculate statistics on each sub group. Functions like `apply()` and `aggregate()` are designed for this purpose, and you will be looking at how to use these *On Your Own*.
 
 
 ***
@@ -238,7 +238,7 @@ When you tell R to run a plot, it actually takes a series of actions:
 1. Opens a new "graphics device". This device can be one of several things:
  a. The **Plot** pane in the lower-right panel of RStudio. RStudio uses this graphics device by default if you don't tell it to use something else.
  b. A blank graphics pane in a new window (this requires the `windows()` or `quartz()` commands, which we discuss below).
- c. An external image file (e.g. a new *.jpg* file).
+ c. An external image file (e.g., a new *.jpg* file).
  d. An external PDF file (complete with vector graphics!).
 2. Draws a series of objects; this part is done "under the hood" of the `plot()` function, and includes:
  a. Axes.
@@ -328,7 +328,7 @@ The first four are all versions of the same function and behave essentially inte
 
 &nbsp;
 
-Let's give both types of graphic generation a try by generating our previous plot as a *.jpg** and **.PDF* file. 
+Let's give both types of graphic generation a try by generating our previous plot as a *.jpg* and *.pdf* file. 
 
 First, let's create a new directory in our class folder for results (another best practice). We can do from within R using the `dir.create()` function:
 
@@ -378,7 +378,7 @@ dev.off()
 
 &nbsp;
 
-Now try opening the *petal-width-length-comparison.jpg*. We have our chart in JPG format! Zoom in to check out the resolution. Not great? Generating JPEG or other graphics formats is useful for some applications (e.g. charts for use in a webpage, for example), but for generating reports and paper figures, vector graphics are the way to go. That's why I tend to work almost exclusively generate my charts as PDF files, and so will we for the rest of the course.
+Now try opening the *petal-width-length-comparison.jpg*. We have our chart in JPG format! Zoom in to check out the resolution. Not great? Generating JPEG or other graphics formats is useful for some applications (e.g., charts for use in a webpage, for example), but for generating reports and paper figures, vector graphics are the way to go. That's why I tend to work almost exclusively generate my charts as PDF files, and so will we for the rest of the course.
 
 So let's do it. First let's take a look at the `pdf()` function:
 
@@ -448,7 +448,7 @@ length(colors())
 
 &nbsp;
 
-To request a specific color, simply specify the color name as a character string (e.g. `"blue"`). You can also select colors by hex code or RGB value with other functions, details on which can be found on this helpful [R color guide]({{ page.root }}/fig/colorPaletteCheatsheet.pdf).
+To request a specific color, simply specify the color name as a character string (e.g., `"blue"`). You can also select colors by hex code or RGB value with other functions, details on which can be found on this helpful [R color guide]({{ page.root }}/fig/colorPaletteCheatsheet.pdf).
 
 First, we can just specify a color for the whole plot using the argument `col = "<color name>"`.
 

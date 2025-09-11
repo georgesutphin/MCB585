@@ -19,11 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<<<<<<< HEAD
-    <meta http-equiv="last-modified" content="2025-09-08 22:36:30 -0700">
-=======
-    <meta http-equiv="last-modified" content="2025-08-25 22:23:53 -0700">
->>>>>>> d0a65073f0d32469d398f208e2efb2ccbcabee54
+    <meta http-equiv="last-modified" content="2025-09-10 23:17:35 -0700">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -333,7 +329,7 @@
     <li><code class="language-plaintext highlighter-rouge">var()</code> - variance</li>
     <li><code class="language-plaintext highlighter-rouge">sd()</code> - standard deviation</li>
     <li><code class="language-plaintext highlighter-rouge">mad()</code> - median absolute deviation
-<em>Note: there is no built-in function for calculating standard error of mean (SEM), but this can be easily calculated using <code class="language-plaintext highlighter-rouge">sd(x)/sqrt(length(x))</code>. There are also packages that have functions available (e.g. <code class="language-plaintext highlighter-rouge">pastecs</code>).</em></li>
+<em>Note: there is no built-in function for calculating standard error of mean (SEM), but this can be easily calculated using <code class="language-plaintext highlighter-rouge">sd(x)/sqrt(length(x))</code>. There are also packages that have functions available (e.g., <code class="language-plaintext highlighter-rouge">pastecs</code>).</em></li>
   </ul>
 
   <p>Miscellaneous:</p>
@@ -345,7 +341,7 @@
 
 <p> </p>
 
-<p>Let’s start by performing some common mathematical operations to learn more about our data.We will load a fresh copy of our sample data to reset any unintended changes from previous lessons and be sure that we include <code class="language-plaintext highlighter-rouge">header=TRUE</code> and <code class="language-plaintext highlighter-rouge">stringsAsFactors=FALSE</code> arguments.</p>
+<p>Let’s start by performing some common mathematical operations to learn more about our data. We will load a fresh copy of our sample data to reset any unintended changes from previous lessons and be sure that we include <code class="language-plaintext highlighter-rouge">header=TRUE</code> and <code class="language-plaintext highlighter-rouge">stringsAsFactors=FALSE</code> arguments.</p>
 
 <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"data/sample.csv"</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
@@ -561,7 +557,7 @@ the entire vector at once:</p>
 
 <p> </p>
 
-<p>In many instances, we will want to break data down by groups (e.g. treatment groups) and calculate statistics on each sub group. Functions like <code class="language-plaintext highlighter-rouge">apply()</code> and <code class="language-plaintext highlighter-rouge">aggregate()</code> are designed for this purpose, and you will be looking at how to use these <em>On Your Own</em>.</p>
+<p>In many instances, we will want to break data down by groups (e.g., treatment groups) and calculate statistics on each sub group. Functions like <code class="language-plaintext highlighter-rouge">apply()</code> and <code class="language-plaintext highlighter-rouge">aggregate()</code> are designed for this purpose, and you will be looking at how to use these <em>On Your Own</em>.</p>
 
 <hr />
 <h3 id="plotting">Plotting</h3>
@@ -607,7 +603,7 @@ the entire vector at once:</p>
   <li>Opens a new “graphics device”. This device can be one of several things:
  a. The <strong>Plot</strong> pane in the lower-right panel of RStudio. RStudio uses this graphics device by default if you don’t tell it to use something else.
  b. A blank graphics pane in a new window (this requires the <code class="language-plaintext highlighter-rouge">windows()</code> or <code class="language-plaintext highlighter-rouge">quartz()</code> commands, which we discuss below).
- c. An external image file (e.g. a new <em>.jpg</em> file).
+ c. An external image file (e.g., a new <em>.jpg</em> file).
  d. An external PDF file (complete with vector graphics!).</li>
   <li>Draws a series of objects; this part is done “under the hood” of the <code class="language-plaintext highlighter-rouge">plot()</code> function, and includes:
  a. Axes.
@@ -706,7 +702,7 @@ the same underlying file. any modern journals prefer that figures be submitted a
 
 <p> </p>
 
-<p>Let’s give both types of graphic generation a try by generating our previous plot as a <em>.jpg** and **.PDF</em> file.</p>
+<p>Let’s give both types of graphic generation a try by generating our previous plot as a <em>.jpg</em> and <em>.pdf</em> file.</p>
 
 <p>First, let’s create a new directory in our class folder for results (another best practice). We can do from within R using the <code class="language-plaintext highlighter-rouge">dir.create()</code> function:</p>
 
@@ -761,7 +757,7 @@ the same underlying file. any modern journals prefer that figures be submitted a
 
 <p> </p>
 
-<p>Now try opening the <em>petal-width-length-comparison.jpg</em>. We have our chart in JPG format! Zoom in to check out the resolution. Not great? Generating JPEG or other graphics formats is useful for some applications (e.g. charts for use in a webpage, for example), but for generating reports and paper figures, vector graphics are the way to go. That’s why I tend to work almost exclusively generate my charts as PDF files, and so will we for the rest of the course.</p>
+<p>Now try opening the <em>petal-width-length-comparison.jpg</em>. We have our chart in JPG format! Zoom in to check out the resolution. Not great? Generating JPEG or other graphics formats is useful for some applications (e.g., charts for use in a webpage, for example), but for generating reports and paper figures, vector graphics are the way to go. That’s why I tend to work almost exclusively generate my charts as PDF files, and so will we for the rest of the course.</p>
 
 <p>So let’s do it. First let’s take a look at the <code class="language-plaintext highlighter-rouge">pdf()</code> function:</p>
 
@@ -848,7 +844,7 @@ the same underlying file. any modern journals prefer that figures be submitted a
 
 <p> </p>
 
-<p>To request a specific color, simply specify the color name as a character string (e.g. <code class="language-plaintext highlighter-rouge">"blue"</code>). You can also select colors by hex code or RGB value with other functions, details on which can be found on this helpful <a href="../fig/colorPaletteCheatsheet.pdf">R color guide</a>.</p>
+<p>To request a specific color, simply specify the color name as a character string (e.g., <code class="language-plaintext highlighter-rouge">"blue"</code>). You can also select colors by hex code or RGB value with other functions, details on which can be found on this helpful <a href="../fig/colorPaletteCheatsheet.pdf">R color guide</a>.</p>
 
 <p>First, we can just specify a color for the whole plot using the argument <code class="language-plaintext highlighter-rouge">col = "&lt;color name&gt;"</code>.</p>
 

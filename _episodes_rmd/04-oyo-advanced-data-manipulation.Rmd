@@ -211,7 +211,7 @@ Instead of creating separate columns for the calculated `mean()` and `sd()` valu
 # This doesn't actually contain any information:
 avg_aneurisms_summary$Aneurisms_avg.1
 
-# While this contaims a matrix (rather than a vector)
+# While this contains a matrix (rather than a vector)
 avg_aneurisms_summary$Aneurisms_avg
 ```
 

@@ -1,6 +1,6 @@
 ---
-title: "Getting started with R and RStudio -- Additional Detail"
-classdate: "8/26/2025 -- On Your Own"
+title: "Lesson 1: Getting started with R and RStudio -- Additional Detail"
+classdate: "Lesson 1 -- On Your Own"
 teaching: 90
 exercises: 30
 questions:
@@ -514,8 +514,8 @@ There are many online forums with R user discussions, but I personally find the 
 The University of Arizona has several resources for both statistics and programming:
 * [Statistics resources](https://it.arizona.edu/documentation/statistical-resources)
 * [Statistics consulting](https://it.arizona.edu/service/statistical-consulting) (pay service, free consultation)
-* [BIO5 StatLab](https://statlab.bio5.org/) (pay service, free consultation)
-* [Cancer Center Biostatistics & Bioinformatics](https://cancercenter.arizona.edu/researchers/shared-resources/biostatistics-bioinformatics)
+* [Statistics Consulting Lab (StatLab)](https://cb2.arizona.edu/services/statistics-consulting-lab) (pay service, free consultation)
+* [Cancer Center Biostatistics & Bioinformatics](https://cancercenter.arizona.edu/researchers/ccsg-supported-shared-resources/biostatistics-bioinformatics)
 
 ***
 

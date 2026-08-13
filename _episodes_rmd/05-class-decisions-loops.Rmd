@@ -1,6 +1,6 @@
 ---
-title: "Decision Making and Loops"
-classdate: "9/16/2025 -- In Class"
+title: "Lesson 5: Decision Making and Loops"
+classdate: "Lesson 5 -- In Class"
 teaching: 90
 exercises: 30
 questions:

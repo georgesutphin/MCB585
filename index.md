@@ -5,12 +5,12 @@ root: .
 
 Welcome to MCB 585! This course is offered by the Molecular & Cellular Biology Department at the University of Arizona. 
 
-MCB585 is an advanced graduate course focused on quantitative approaches to biological questions. Students will learn how to acquire, access, and interact with large biological datasets. The first part of the course relies heavily on learning and utilizing the R Statistical Programming language, but students are not expected to have programming experience upon entering the course. The Fall 2025 course is broken up into two units. The first unit will focus on introducing R and using R in basic statistical operations. This section incorporates elements of experimental design and appropriate application of statistical tests as a frame for learning R. analyzing functional genomic and high-throughput data with an introduction to bioinformatics, machine learning, and data integration. 
+MCB585 is an advanced graduate course focused on quantitative approaches to biological questions. Students will learn how to acquire, access, and interact with large biological datasets. The course relies heavily on learning and utilizing the R Statistical Programming language, but students are not expected to have programming experience upon entering the course. The course is broken up into two units. The first unit focuses on introducing R and using R in basic statistical operations, incorporating elements of experimental design and appropriate application of statistical tests as a framework for learning R. The second unit focuses on analyzing functional genomic and high-throughput data, with an introduction to bioinformatics, machine learning, and data integration.
 
 **Instructors:**
 
-*   **George Sutphin**, Assistant Professor, Molecular & Cellular Biology
-*   **Guang Yao**, Associate Professor, Molecular & Cellular Biology
+*   **Megha Padi**, Associate Professor, Molecular & Cellular Biology
+*   **Claire McWhite**, Assistant Professor, Molecular & Cellular Biology
 
 **Course Goals:**
 
@@ -29,12 +29,7 @@ Students will be able to:
 4.  Completion of *On Your Own* content and computer exercises.
 5.  Completion of final project proposal, report, and presentation.
 
-**Grading Summary:**
-* 40% attendance and participation in exercises and discussion
-* 25% completion of assignments
-* 5% final project proposal
-* 15% final project report (including code)
-* 15% final project presentation
+**Grading:** See the course syllabus for current grading details.
 
 
 ## Prerequisites

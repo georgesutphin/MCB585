@@ -1,6 +1,6 @@
 ---
-title: "Manipulating and Plotting Data"
-classdate: "9/11/2025 -- In Class"
+title: "Lesson 4: Manipulating and Plotting Data"
+classdate: "Lesson 4 -- In Class"
 teaching: 90
 exercises: 30
 questions:

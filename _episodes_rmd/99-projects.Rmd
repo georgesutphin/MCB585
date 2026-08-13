@@ -1,6 +1,6 @@
 ---
 title: "Final Projects"
-classdate: "12/3/2024, 12/5/2024, 12/10/2024"
+classdate: "Final Projects"
 teaching: 145
 exercises: 0
 questions:
@@ -23,25 +23,23 @@ knitr_fig_path("99-projects-")
 
 The final project is the capstone experience for MCB 585. It serves as an opportunity to synthesize and apply the quantitative and computational skills learned throughout the course to a novel, large dataset. The core objective is to use these skills to formally evaluate a hypothesis, design a quantitative experiment, or explore the behavior of a complex biological system. 
 We strongly encourage you to use data from your own research, as a key goal of this course is to provide you with practical tools for your graduate work. However, several alternatives are available if you do not have a suitable dataset. 
-The project is composed of three parts: (1) a proposal, (2) a final written report with code, and (3) an oral presentation. Together, these components account for 35% of your final MCB 585 grade.
+The project is composed of three parts: (1) a proposal, (2) a final written report with code, and (3) an oral presentation. See the course syllabus for how these components contribute to your final grade.
 
-### Due Dates & Submission Instructures
+### Due Dates & Submission Instructions
 
-Each project will consist of three parts:
+Final projects are typically presented during the last 2–3 days of class. Written reports and slides are due on or before the first presentation day. See the course syllabus or schedule for specific dates and other details for the current semester.
 
-The three parts of the final Project are due as follows:
-* **Part 1: Project Proposal.** Due Tuesday 11/4/2025
-* **Part 2: Written Report with Code.** Due Tuesday 12/2/2025
-* **Part 3: Oral Presentation.** Delivered during class on 12/4/2025, 12/9/2025, and 12/11/2025 (a signup sheet will be available toward the end of November).
+* **Part 1: Project Proposal.** Submitted earlier in the term (see the syllabus or schedule for the exact due date).
+* **Part 2: Written Report with Code.** Due on or before the first presentation day.
+* **Part 3: Oral Presentation.** Delivered during the last 2–3 class meetings (a signup sheet will be available later in the term).
 
-**Submission.** Project proposals and written reports should be submitted to the corresponding D2L Assignment drop box. The oral presentation just needs to be delivered on your assigned day but does not need to be turned in separately.
+**Submission.** See the course syllabus or schedule for where and how to submit project materials. The oral presentation just needs to be delivered on your assigned day but does not need to be turned in separately.
 
 ## Part 1: Project Proposal
 
 The purpose of the proposal is to ensure your project has an appropriate scope and to allow instructors to provide early feedback. In some cases, instructors may request a brief meeting to clarify details or suggest alternative approaches. 
-* Value: 5% of final grade
-* Length: ~1 page 
-* Due Date: 11/4/2025
+* **Length:** ~1 page 
+* **Due Date:** See the course syllabus or schedule
 
 Your proposal must outline the following:
 * Biological Question or Analysis Goal: Clearly state the specific question or hypothesis you intend to address. 
@@ -58,9 +56,8 @@ Your proposal must outline the following:
 ## Part 2: Written Report & Code
 
 You will submit a written report of your findings, accompanied by the code used to perform the analysis.
-* **Value:** 15% of final grade
 * **Length:** 1-2 pages of single-spaced text, plus figures and tables
-* **Due Date:** Tuesday 12/2/2025
+* **Due Date:** On or before the first presentation day (see the course syllabus or schedule)
 
 The report should be structured like a brief scientific paper with the following sections:
 * **Introduction:** Provide background on the biological question and state the specific goals of your project.
@@ -78,9 +75,8 @@ The report should be structured like a brief scientific paper with the following
 ## Part 3: Oral Presentation
 
 During the last few class meetings, each student will deliver a presentation on their project.
-* **Value:** 15% of final grade
-* **Length:** Plan to give your presentation with the 15-minute slot, structured as a 10-12 minute talk followed by 3-5 minutes for questions and discussion
-* **Date:** 12/4/2025, 12/9/2025, and 12/11/2025 (a signup sheet will be available toward the end of November)
+* **Length:** Plan to give your presentation within an ~15-minute slot, structured as a 10-12 minute talk followed by 3-5 minutes for questions and discussion
+* **Date:** Typically during the last 2–3 days of class (see the course syllabus or schedule; a signup sheet will be available later in the term)
 
 Your presentation should describe:
 * **Biological Question:** The background and motivation for your project, and the specific goal of your analysis.
@@ -136,8 +132,8 @@ Your presentation should describe:
 > example:
 >    + [Vanderbilt University Department of BiostatisticsDatasets](https://hbiostat.org/data/)
 >    + [Berkeley Library Health Statistics & Data Datasets](https://guides.lib.berkeley.edu/publichealth/healthstatistics/rawdata)
->    + [Stanford Statweb Public Data Repositories](https://chiarasabatti.su.domains/data.html)
->    + [LINCS Data Portal Datasets](http://lincsportal.ccs.miami.edu/datasets/)
+>    + [Stanford DataWorks](https://dataworks.stanford.edu/)
+>    + [LINCS Data Portal Datasets](https://lincsportal.ccs.miami.edu/datasets/)
 {: .callout}
 
 {% include links.md %}

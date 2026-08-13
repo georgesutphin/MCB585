@@ -3,7 +3,7 @@
 [ci]: http://communityin.org/
 [coc-reporting]: https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html#incident-reporting-guidelines
 [coc]: https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
-[concept-maps]: https://carpentries.github.io/instructor-training/05-memory/
+[concept-maps]: https://carpentries.github.io/instructor-training/
 [contrib-covenant]: https://contributor-covenant.org/
 [contributing]: {{ repo_url }}/blob/{{ source_branch }}/CONTRIBUTING.md
 [cran-checkpoint]: https://cran.r-project.org/package=checkpoint
@@ -11,11 +11,11 @@
 [cran-stringr]: https://cran.r-project.org/package=stringr
 [dc-lessons]: http://www.datacarpentry.org/lessons/
 [email]: mailto:team@carpentries.org
-[github-importer]: https://import.github.com/
+[github-importer]: https://github.com/new/import
 [importer]: https://github.com/new/import
 [jekyll-collection]: https://jekyllrb.com/docs/collections/
 [jekyll-install]: https://jekyllrb.com/docs/installation/
-[jekyll-windows]: http://jekyll-windows.juthilo.com/
+[jekyll-windows]: https://jekyllrb.com/docs/installation/windows/
 [jekyll]: https://jekyllrb.com/
 [jupyter]: https://jupyter.org/
 [kramdown]: https://kramdown.gettalong.org/
@@ -36,7 +36,7 @@
 [python-gapminder]: https://swcarpentry.github.io/python-novice-gapminder/
 [pyyaml]: https://pypi.python.org/pypi/PyYAML
 [r-markdown]: https://rmarkdown.rstudio.com/
-[rstudio]: https://www.rstudio.com/
+[rstudio]: https://posit.co/download/rstudio-desktop/
 [ruby-install-guide]: https://www.ruby-lang.org/en/downloads/
 [ruby-installer]: https://rubyinstaller.org/
 [rubygems]: https://rubygems.org/pages/download/

@@ -1,6 +1,6 @@
 ---
-title: "Advanced Data Manipulation and Plotting"
-classdate: "9/11/2025 -- On Your Own"
+title: "Lesson 4: Advanced Data Manipulation and Plotting"
+classdate: "Lesson 4 -- On Your Own"
 teaching: 90
 exercises: 30
 questions:

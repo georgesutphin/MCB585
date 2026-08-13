@@ -5,5 +5,5 @@ MCB585 is an advanced graduate course focused on quantitative approaches to biol
 
 The basic design of the course presentation is based on [The Carpentries](https://carpentries.org/), which teach foundational coding and data science skills to researchers worldwide. The couse instructors are:
 
-* [George Sutphin](https://sutphinlab.org/) (sutphin@arizona.edu)
-* [Guang Yao](https://sites.arizona.edu/yao-lab/) (guangyao@arizona.edu)
+* Megha Padi, Associate Professor, Molecular & Cellular Biology
+* Claire McWhite, Assistant Professor, Molecular & Cellular Biology

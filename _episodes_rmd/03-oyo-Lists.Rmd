@@ -1,6 +1,6 @@
 ---
-title: "Lists and Advanced Indexing"
-classdate: "9/9/2025 -- In Class"
+title: "Lesson 3: Lists and Advanced Indexing"
+classdate: "Lesson 3 -- On Your Own"
 teaching: 90
 exercises: 30
 questions:
@@ -15,7 +15,7 @@ keypoints:
 - "Lists can contain elements of different classes, unlike vectors."
 - "Data frames are a specific type of list in which all elements are vectors of the same length. Each vector can contain data of different classes."
 - "Use `object[[x]]` to select a single element from a list."
-- "Each element of a list can be assigned a name that can be addressed using the `$` operator (e.g. `mylist$element1`)."
+- "Each element of a list can be assigned a name that can be addressed using the `$` operator (e.g., `mylist$element1`)."
 - "Different indexing methods can be combined to efficiently extract desired data subsets for further analysis."
 source: Rmd
 ---
@@ -25,7 +25,7 @@ source("../bin/chunk-options.R")
 knitr_fig_path("03-oyo-lists-")
 ```
 
-##  In Class
+## On Your Own
 
 ### Lists
 
@@ -98,6 +98,7 @@ Another consequence of the difference between `[]` and `[[]]` indexing is that y
 ```{r}
 x[[c(1,2)]]
 ```
+
 &nbsp; 
 
 Because the `[[]]` index returns the object *inside* the requested **list** element, entering a range of indexes actually requests that R return multiple separate objects, possibly with different classes. If you want to return a **list** that is a subset of the current **list**, use `[]`:
@@ -197,7 +198,7 @@ str(l.vs.w)
 
 &nbsp;
 
-Because this data is formatted as a list, we can extract specific components for further use (e.g. to print onto a chart, or use to separate signficant comparisons from a computed set of t-tests) using either `[[]]` or `$`. Let's pull the p-value for instance:
+Because this data is formatted as a list, we can extract specific components for further use (e.g. to print onto a chart, or use to separate significant comparisons from a computed set of t-tests) using either `[[]]` or `$`. Let's pull the p-value for instance:
 
 ```{r}
 l.vs.w$p.value
@@ -260,7 +261,7 @@ We noted *In Class* that logical indexing is one of the more powerful ways to in
 
 **Relational operators**
 
-The most common application of logical indexing is to use the information contained within one or more variables (i.e. columns) of a **data frame** to extract a subset of data that has a desired set of relational properties. To do so, we first need to generate a logical vector based on the information in the variable(s) of interest, which we will then use to index the **data frame**.
+The most common application of logical indexing is to use the information contained within one or more variables (i.e., columns) of a **data frame** to extract a subset of data that has a desired set of relational properties. To do so, we first need to generate a logical vector based on the information in the variable(s) of interest, which we will then use to index the **data frame**.
 
 Logical vectors can be created using `relational operators`:
 * `<` = less than
@@ -357,6 +358,7 @@ c(T,F,F) && c(T,T,F)
 extremes <- iris[(iris$Sepal.Length < 4.6) | (iris$Sepal.Length > 7.3), ]
 extremes
 ```
+
 &nbsp;
 
 Note the use of parentheses `()` to break up each logical operation. These are not always absolutely necessary for the code to run properly, but are generally a good idea to use because they always assist you (the coder) to explicitly breakup the order of operations with complex statements.

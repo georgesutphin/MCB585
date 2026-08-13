@@ -1,6 +1,6 @@
 ---
-title: "Multiple Test Correction"
-classdate: "9/23/2025 -- On Your Own"
+title: "Lesson 7: Multiple Test Correction"
+classdate: "Lesson 7 -- On Your Own"
 teaching: 90
 exercises: 30
 questions:
@@ -395,7 +395,7 @@ There are other tests that make different assumptions about your data, sampling,
 > > 
 > > Looks normal enough. We will proceed with that assumption. Looking at the 
 > > [UCLA Institute for Digital Research & Education 
-> > Table](https://stats.idre.ucla.edu/other/mult-pkg/whatstat/), we are 
+> > Table](https://stats.oarc.ucla.edu/other/mult-pkg/whatstat/), we are 
 > > looking at the correlation between 1 interval continuous dependent variable 
 > > and 1 interval continuous independent variable. The R function for this 
 > > sort of correlation is `cor.test()`:

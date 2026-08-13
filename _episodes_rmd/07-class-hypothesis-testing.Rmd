@@ -1,6 +1,6 @@
 ---
-title: "Hypothesis Testing"
-classdate: "9/23/2025 -- In Class"
+title: "Lesson 7: Hypothesis Testing"
+classdate: "Lesson 7 -- In Class"
 teaching: 90
 exercises: 30
 questions:
@@ -254,10 +254,10 @@ If you have a data structure that allows for paired testing, it provides quite a
 
 There are many, many resources that provide information on selecting statistical tests from data. You should now have the basic information needed to find the right test. Pick your favorite table or flow chart to select your test. Here are some options:
 
-* [UCLA Institute for Digital Research & Education](https://stats.idre.ucla.edu/other/mult-pkg/whatstat/) provides a table to guide the correct choice of test with handy links to the corresponding functions in R and other analysis tools.
-* [Handbook of Biological Statistics](http://www.biostathandbook.com/testchoice.html) provides a table with a different organization and links to more detailed descriptions of each test.
+* [UCLA Office for Advanced Research Computing](https://stats.oarc.ucla.edu/other/mult-pkg/whatstat/) provides a table to guide the correct choice of test with handy links to the corresponding functions in R and other analysis tools.
+* [Handbook of Biological Statistics](https://www.biostathandbook.com/testchoice.html) provides a table with a different organization and links to more detailed descriptions of each test.
 
-Here is an example of a flow chart for choosing a test. Many different versions of this type of chart are available online (original [here](http://www.pnrjournal.com/article.asp?issn=0976-9234;year=2010;volume=1;issue=2;spage=61;epage=63;aulast=Jaykaran)):
+Here is an example of a flow chart for choosing a test. Many different versions of this type of chart are available online (original [here](https://web.archive.org/web/2013/http://www.pnrjournal.com/article.asp?issn=0976-9234;year=2010;volume=1;issue=2;spage=61;epage=63;aulast=Jaykaran)):
 
 <img src="../fig/Statistical_Test_Flow_Chart.jpg" alt="Which test?" />
 

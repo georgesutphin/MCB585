@@ -1,6 +1,6 @@
 ---
-title: "Power Analysis"
-classdate: "9/30/2025 -- In Class"
+title: "Lesson 9: Power Analysis"
+classdate: "Lesson 9 -- In Class"
 teaching: 90
 exercises: 30
 questions:
@@ -136,7 +136,7 @@ That leaves **sample size** as our only real tool to control errors. Since we ty
 
 By increasing sample size we reduce the variance in the sampling distribution. For a given population with a specified $$\Delta$$ and $$\alpha$$, increasing $$n$$ reduces the overlap in the sampling distributions, thus lowering the probability of making a Type II Error ($$\beta$$) and increasing the power to detect a real difference in distribution means, if one exists.
 
-In reality, effect size is another parameter that can be manipulated in the effort to maximize power while minimizing resource expenditure. You might, for instance, decide opt for a larger power to detect a bigger effect size. The interplay between these various factors can be intuitively manipulated using a visualization tool at [R Psychologist](http://rpsychologist.com/d3/NHST/).
+In reality, effect size is another parameter that can be manipulated in the effort to maximize power while minimizing resource expenditure. You might, for instance, decide opt for a larger power to detect a bigger effect size. The interplay between these various factors can be intuitively manipulated using a visualization tool at [R Psychologist](https://rpsychologist.com/d3/nhst/).
 
 ***
 ### Calculating power in R

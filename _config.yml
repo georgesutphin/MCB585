@@ -30,8 +30,8 @@ email: "sutphin@gmail.com"
 
 # Sites.
 mcb585_site: "https://georgesutphin.github.io/MCB585/"
-ua_coc_site: "http://deanofstudents.arizona.edu/policies-and-codes/code-academic-integrity"
-student_behavior_site: "http://policy.arizona.edu/education-and-student-affairs/threatening-behavior-students"
+ua_coc_site: "https://deanofstudents.arizona.edu/policies/code-academic-integrity"
+student_behavior_site: "https://deanofstudents.arizona.edu/threatening-behavior"
 amy_site: "https://amy.software-carpentry.org/workshops"
 carpentries_github: "https://github.com/carpentries"
 carpentries_pages: "https://carpentries.github.io"

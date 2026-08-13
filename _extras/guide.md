@@ -61,7 +61,7 @@ is located in _Tools > Global Options > Git/SVN_; on Mac/Linux git is often in
 `C:/Program Files (x86)/Git/bin/git.exe`. If you don't know where git is
 installed on someone's computer, open a terminal and try `which git` on
 Mac/Linux, or `where git` or `whereis git.exe` on Windows. See
-[Jenny Bryan's instructions](http://stat545-ubc.github.io/git03_rstudio-meet-git.html)
+[Jenny Bryan's Happy Git with R instructions](https://happygitwithr.com/rstudio-git-github.html)
 for more detail.
 
 If Windows users select the option "Run Git from the Windows command prompt"
